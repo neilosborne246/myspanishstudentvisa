@@ -64,6 +64,69 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
 body { padding-top: 145px !important; }
 body>nav { min-height: 130px; }
 </style>
+
+<style>
+/* ===== HOMEPAGE-STYLE HERO OVERRIDE ===== */
+.page-hero {
+  padding: 3.5rem 4rem 5rem !important;
+  text-align: left !important;
+  min-height: 72vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+.page-hero::before {
+  background: radial-gradient(circle, rgba(250,207,57,0.07) 0%, transparent 70%) !important;
+  top: -200px !important; right: -200px !important;
+  width: 700px !important; height: 700px !important;
+}
+.page-hero-inner {
+  max-width: 800px !important;
+  margin: 0 !important;
+}
+.page-hero-badge {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: var(--yellow) !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  margin-bottom: 1.5rem !important;
+  border-radius: 0 !important;
+}
+.page-hero-badge::before {
+  content: '' !important;
+  display: block !important;
+  width: 2rem !important;
+  height: 1px !important;
+  background: var(--yellow) !important;
+  flex-shrink: 0 !important;
+}
+.page-hero h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem) !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  max-width: 800px !important;
+}
+.page-hero p {
+  text-align: left !important;
+  margin: 0 0 2.5rem !important;
+  font-weight: 300 !important;
+  font-size: 1.1rem !important;
+}
+.page-hero .hero-actions {
+  justify-content: flex-start !important;
+}
+@media (max-width: 900px) {
+  .page-hero { padding: 2.5rem 1.5rem 3.5rem !important; min-height: 55vh !important; }
+  .page-hero h1 { font-size: clamp(2.2rem, 8vw, 3.5rem) !important; }
+}
+</style>
 </head>
 <body>
 
@@ -138,54 +201,42 @@ body>nav { min-height: 130px; }
 <p>After years of tracking Spain student visa applications, the same mistakes appear repeatedly in refusal cases. Some are obvious once pointed out; others are surprising even to well-prepared applicants. This guide catalogues the 15 most costly errors, explains why each one causes problems, and tells you exactly what to do instead. Read this before you submit — some of these errors cannot be corrected once the application is in.</p>
 <h2>Financial Document Mistakes (The Most Dangerous Category)</h2>
 <p>Financial document errors cause more Spain student visa refusals than any other category combined.</p>
-<ul>
-<li>('h3', 'Mistake 1: Staging your bank account')</li>
-<li>Depositing a large lump sum immediately before requesting your bank statement is the single most common financial mistake. Consulates are trained to spot accounts that show a sudden, unexplained large deposit immediately before the statement period. The fix: build your balance over at least 3 months before applying. The statement should show regular incoming transactions and a growing or stable balance.</li>
-<li>('h3', 'Mistake 2: Providing statements in a foreign currency without conversion evidence')</li>
-<li>If your bank account is in a currency other than euros, you must provide official conversion evidence — not just a handwritten calculation. The fix: include a printout from your bank or an official exchange rate source showing the EUR equivalent, with the date.</li>
-<li>('h3', 'Mistake 3: Using a sponsorship letter without supporting evidence')</li>
-<li>A sponsor's letter alone is not financial evidence. The fix: the sponsor's letter must be accompanied by the sponsor's own bank statements (3 months), payslips, or other income evidence, and should be notarised.</li>
-</ul>
+<h3>Mistake 1: Staging your bank account</h3>
+<p>Depositing a large lump sum immediately before requesting your bank statement is the single most common financial mistake. Consulates are trained to spot accounts that show a sudden, unexplained large deposit immediately before the statement period. The fix: build your balance over at least 3 months before applying. The statement should show regular incoming transactions and a growing or stable balance.</p>
+<h3>Mistake 2: Providing statements in a foreign currency without conversion evidence</h3>
+<p>If your bank account is in a currency other than euros, you must provide official conversion evidence — not just a handwritten calculation. The fix: include a printout from your bank or an official exchange rate source showing the EUR equivalent, with the date.</p>
+<h3>Mistake 3: Using a sponsorship letter without supporting evidence</h3>
+<p>A sponsor's letter alone is not financial evidence. The fix: the sponsor's letter must be accompanied by the sponsor's own bank statements (3 months), payslips, or other income evidence, and should be notarised.</p>
 <h2>Document Authentication Mistakes</h2>
 <p>Apostille and translation errors are the second major category of preventable refusals.</p>
-<ul>
-<li>('h3', 'Mistake 4: Apostille on a copy instead of the original')</li>
-<li>An apostille must be attached to or stamped on the original document or a certified copy. Apostilles on photocopies of documents are not valid. The fix: ensure your apostille is on the original or a properly certified copy.</li>
-<li>('h3', 'Mistake 5: Outdated background checks')</li>
-<li>Background checks (certificado de antecedentes penales) typically have a validity period of 3–6 months. Many applicants obtain theirs too early and find it has expired by the time of submission. The fix: obtain your background check within 3 months of your intended submission date.</li>
-<li>('h3', 'Mistake 6: Using a non-certified translator')</li>
-<li>Translations into Spanish must be producted by a sworn translator (traductor jurado) officially registered with the Spanish Ministry of Foreign Affairs. Regular bilingual translations are not accepted. The fix: only use translators on the official list, which is published on the Spanish Ministry of Foreign Affairs website.</li>
-</ul>
+<h3>Mistake 4: Apostille on a copy instead of the original</h3>
+<p>An apostille must be attached to or stamped on the original document or a certified copy. Apostilles on photocopies of documents are not valid. The fix: ensure your apostille is on the original or a properly certified copy.</p>
+<h3>Mistake 5: Outdated background checks</h3>
+<p>Background checks (certificado de antecedentes penales) typically have a validity period of 3–6 months. Many applicants obtain theirs too early and find it has expired by the time of submission. The fix: obtain your background check within 3 months of your intended submission date.</p>
+<h3>Mistake 6: Using a non-certified translator</h3>
+<p>Translations into Spanish must be produced by a sworn translator (traductor jurado) officially registered with the Spanish Ministry of Foreign Affairs. Regular bilingual translations are not accepted. The fix: only use translators on the official list, which is published on the Spanish Ministry of Foreign Affairs website.</p>
 <h2>Insurance and Medical Certificate Mistakes</h2>
-<ul>
-<li>('h3', 'Mistake 7: Health insurance with co-payments or deductibles')</li>
-<li>The Spanish consulate requires health insurance with no co-payments (franquicia) and no deductibles (deducible). Many standard travel insurance or expat insurance policies include these. The fix: read your policy terms carefully before buying. Policies marketed specifically for Spain student visas (Sanitas, Adeslas student plans) are usually compliant.</li>
-<li>('h3', 'Mistake 8: Medical certificate from an unapproved doctor')</li>
-<li>Some consulates maintain a list of approved doctors for medical certificates. Using a doctor not on the approved list results in the certificate being rejected. The fix: check your consulate's specific requirements for medical certificates before booking your appointment.</li>
-</ul>
+<h3>Mistake 7: Health insurance with co-payments or deductibles</h3>
+<p>The Spanish consulate requires health insurance with no co-payments (franquicia) and no deductibles (deducible). Many standard travel insurance or expat insurance policies include these. The fix: read your policy terms carefully before buying. Policies marketed specifically for Spain student visas (Sanitas, Adeslas student plans) are usually compliant.</p>
+<h3>Mistake 8: Medical certificate from an unapproved doctor</h3>
+<p>Some consulates maintain a list of approved doctors for medical certificates. Using a doctor not on the approved list results in the certificate being rejected. The fix: check your consulate's specific requirements for medical certificates before booking your appointment.</p>
 <h2>Application Form and Administrative Mistakes</h2>
-<ul>
-<li>('h3', 'Mistake 9: Applying at the wrong consulate')</li>
-<li>You must apply at the Spanish consulate with territorial jurisdiction over your place of legal residence — not the nearest consulate geographically. The fix: confirm your jurisdiction before booking your appointment. If you have recently moved, ensure your residency documentation reflects your current address.</li>
-<li>('h3', 'Mistake 10: Leaving gaps in the application form')</li>
-<li>Incomplete application forms are returned or rejected. Mandatory fields left blank — even 'not applicable' sections — cause problems. The fix: complete every field. Write N/A in fields that are not relevant to your situation.</li>
-<li>('h3', 'Mistake 11: Submitting documents in the wrong order or format')</li>
-<li>Some consulates specify the exact order in which documents should be presented. The fix: follow your consulate's checklist exactly, in the order specified, and use dividers or clear labelling.</li>
-</ul>
+<h3>Mistake 9: Applying at the wrong consulate</h3>
+<p>You must apply at the Spanish consulate with territorial jurisdiction over your place of legal residence — not the nearest consulate geographically. The fix: confirm your jurisdiction before booking your appointment. If you have recently moved, ensure your residency documentation reflects your current address.</p>
+<h3>Mistake 10: Leaving gaps in the application form</h3>
+<p>Incomplete application forms are returned or rejected. Mandatory fields left blank — even 'not applicable' sections — cause problems. The fix: complete every field. Write N/A in fields that are not relevant to your situation.</p>
+<h3>Mistake 11: Submitting documents in the wrong order or format</h3>
+<p>Some consulates specify the exact order in which documents should be presented. The fix: follow your consulate's checklist exactly, in the order specified, and use dividers or clear labelling.</p>
 <h2>Timing Mistakes</h2>
-<ul>
-<li>('h3', 'Mistake 12: Applying too late')</li>
-<li>The most common timing mistake: applying 6–8 weeks before arrival when the consulate takes 10–12 weeks. The fix: allow a minimum of 6 months from starting preparation to arriving in Spain.</li>
-<li>('h3', 'Mistake 13: Booking non-refundable flights before the visa is confirmed')</li>
-<li>If the visa is delayed or refused, non-refundable flights are a significant additional financial loss. The fix: do not book flights until the visa is in hand.</li>
-</ul>
+<h3>Mistake 12: Applying too late</h3>
+<p>The most common timing mistake: applying 6–8 weeks before arrival when the consulate takes 10–12 weeks. The fix: allow a minimum of 6 months from starting preparation to arriving in Spain.</p>
+<h3>Mistake 13: Booking non-refundable flights before the visa is confirmed</h3>
+<p>If the visa is delayed or refused, non-refundable flights are a significant additional financial loss. The fix: do not book flights until the visa is in hand.</p>
 <h2>Post-Arrival Mistakes</h2>
-<ul>
-<li>('h3', 'Mistake 14: Missing the 30-day TIE registration deadline')</li>
-<li>You must apply for your TIE within 30 days of arrival in Spain. Missing this deadline creates legal irregularity in your residency status and complicates everything that follows — banking, health registration, university enrolment. The fix: book your TIE appointment (cita previa) within the first 3–5 days of arrival.</li>
-<li>('h3', 'Mistake 15: Not doing empadronamiento before TIE appointment')</li>
-<li>The TIE appointment requires proof of registered address — your empadronamiento certificate. Many students try to attend the TIE appointment before registering at the town hall, only to find they are missing this document. The fix: empadronamiento first, then TIE appointment.</li>
-</ul>
+<h3>Mistake 14: Missing the 30-day TIE registration deadline</h3>
+<p>You must apply for your TIE within 30 days of arrival in Spain. Missing this deadline creates legal irregularity in your residency status and complicates everything that follows — banking, health registration, university enrolment. The fix: book your TIE appointment (cita previa) within the first 3–5 days of arrival.</p>
+<h3>Mistake 15: Not doing empadronamiento before TIE appointment</h3>
+<p>The TIE appointment requires proof of registered address — your empadronamiento certificate. Many students try to attend the TIE appointment before registering at the town hall, only to find they are missing this document. The fix: empadronamiento first, then TIE appointment.</p>
 
 <h2>Frequently Asked Questions</h2>
 <div class="faq-list"><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What is the single most common reason Spain student visas are refused?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">Insufficient or unconvincing financial evidence — specifically bank accounts that show a large recent deposit with no prior history, or balances that are at or below the IPREM threshold without additional context. Build your bank balance over at least 3 months before applying and ensure your statements show organic financial activity.</div></div>
@@ -251,12 +302,12 @@ body>nav { min-height: 130px; }
         <p class="footer-heading">Other Visa Types</p>
         <ul class="footer-list">
           <li><a href="https://myspanishnlv.com" rel="noopener">Non-Lucrative Visa (NLV)</a></li>
-          <li><a href="https://myspanishstudentvisa.com" rel="noopener">Student Visa</a></li>
+          <li><a href="https://myspanishdnv.com" rel="noopener">My Spanish DNV</a></li>
         </ul>
         <p class="footer-heading" style="margin-top:1.5rem;">Services</p>
         <ul class="footer-list">
-          <li><a href="https://spanish-healthinsurance.com" rel="noopener">Health Insurance Spain</a></li>
-          <li><a href="https://247expatinsurance.com" rel="noopener">Expat Insurance</a></li>
+          <li><a href="https://spanish-healthinsurance.com" rel="noopener">Spanish Health Insurance</a></li>
+          <li><a href="https://247expatinsurance.com" rel="noopener">247 Expat Insurance</a></li>
           <li><a href="https://dashboard.platinumlegalspain.com/student-visa" rel="noopener">Start Application</a></li>
         </ul>
       </div>
@@ -282,6 +333,6 @@ body>nav { min-height: 130px; }
       </div>
     </div>
   </footer><div class="mobile-bar"><a href="https://dashboard.platinumlegalspain.com/student-visa" class="bar-apply">Start Application →</a><a href="mailto:hola@myspanishvisa.com" class="bar-contact">Contact Us</a></div>
-<script>const btn=document.getElementById("menuBtn"),menu=document.getElementById("mobileMenu"),close=document.getElementById("menuClose");btn.addEventListener("click",()=>{menu.classList.add("open");btn.setAttribute("aria-expanded","true");});close.addEventListener("click",()=>{menu.classList.remove("open");btn.setAttribute("aria-expanded","false");});document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{const item=q.closest(".faq-item");const open=item.classList.contains("open");document.querySelectorAll(".faq-item").forEach(i=>i.classList.remove("open"));if(!open)item.classList.add("open");q.setAttribute("aria-expanded",item.classList.contains("open"));});});</script>
+<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{const item=q.closest(".faq-item");const open=item.classList.contains("open");document.querySelectorAll(".faq-item").forEach(i=>i.classList.remove("open"));if(!open)item.classList.add("open");q.setAttribute("aria-expanded",item.classList.contains("open"));});});</script>
 </body>
 </html>

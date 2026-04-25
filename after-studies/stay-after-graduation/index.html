@@ -78,6 +78,69 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
 body { padding-top: 145px !important; }
 body>nav { min-height: 130px; }
 </style>
+
+<style>
+/* ===== HOMEPAGE-STYLE HERO OVERRIDE ===== */
+.page-hero {
+  padding: 3.5rem 4rem 5rem !important;
+  text-align: left !important;
+  min-height: 72vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+.page-hero::before {
+  background: radial-gradient(circle, rgba(250,207,57,0.07) 0%, transparent 70%) !important;
+  top: -200px !important; right: -200px !important;
+  width: 700px !important; height: 700px !important;
+}
+.page-hero-inner {
+  max-width: 800px !important;
+  margin: 0 !important;
+}
+.page-hero-badge {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: var(--yellow) !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  margin-bottom: 1.5rem !important;
+  border-radius: 0 !important;
+}
+.page-hero-badge::before {
+  content: '' !important;
+  display: block !important;
+  width: 2rem !important;
+  height: 1px !important;
+  background: var(--yellow) !important;
+  flex-shrink: 0 !important;
+}
+.page-hero h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem) !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  max-width: 800px !important;
+}
+.page-hero p {
+  text-align: left !important;
+  margin: 0 0 2.5rem !important;
+  font-weight: 300 !important;
+  font-size: 1.1rem !important;
+}
+.page-hero .hero-actions {
+  justify-content: flex-start !important;
+}
+@media (max-width: 900px) {
+  .page-hero { padding: 2.5rem 1.5rem 3.5rem !important; min-height: 55vh !important; }
+  .page-hero h1 { font-size: clamp(2.2rem, 8vw, 3.5rem) !important; }
+}
+</style>
 </head>
 <body>
 
@@ -221,12 +284,12 @@ body>nav { min-height: 130px; }
         <p class="footer-heading">Other Visa Types</p>
         <ul class="footer-list">
           <li><a href="https://myspanishnlv.com" rel="noopener">Non-Lucrative Visa (NLV)</a></li>
-          <li><a href="https://myspanishstudentvisa.com" rel="noopener">Student Visa</a></li>
+          <li><a href="https://myspanishdnv.com" rel="noopener">My Spanish DNV</a></li>
         </ul>
         <p class="footer-heading" style="margin-top:1.5rem;">Services</p>
         <ul class="footer-list">
-          <li><a href="https://spanish-healthinsurance.com" rel="noopener">Health Insurance Spain</a></li>
-          <li><a href="https://247expatinsurance.com" rel="noopener">Expat Insurance</a></li>
+          <li><a href="https://spanish-healthinsurance.com" rel="noopener">Spanish Health Insurance</a></li>
+          <li><a href="https://247expatinsurance.com" rel="noopener">247 Expat Insurance</a></li>
           <li><a href="https://dashboard.platinumlegalspain.com/student-visa" rel="noopener">Start Application</a></li>
         </ul>
       </div>
@@ -254,9 +317,6 @@ body>nav { min-height: 130px; }
   </footer>
   <div class="mobile-bar"><a href="https://dashboard.platinumlegalspain.com/student-visa" class="bar-apply">Start Application →</a><a href="mailto:hola@myspanishvisa.com" class="bar-contact">Contact Us</a></div>
   <script>
-    const btn=document.getElementById('menuBtn'),menu=document.getElementById('mobileMenu'),close=document.getElementById('mobileMenuClose');
-    btn.addEventListener('click',()=>{menu.classList.add('open');btn.setAttribute('aria-expanded','true');});
-    close.addEventListener('click',()=>{menu.classList.remove('open');btn.setAttribute('aria-expanded','false');});
     document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const item=q.closest('.faq-item');const open=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!open)item.classList.add('open');q.setAttribute('aria-expanded',item.classList.contains('open'));});});
   </script>
 </body>
