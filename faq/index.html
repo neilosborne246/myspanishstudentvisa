@@ -28,7 +28,10 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
 .nav-logo img,.nav-logo-img{height:108px!important;width:auto!important;}
 @media(max-width:900px){.nav-logo img,.nav-logo-img{height:72px!important;}}
 body{padding-top:145px!important;}
-body>nav{min-height:130px;}
+body>nav{min-height:130px;padding:1.25rem 4rem!important;}
+.nav-links,.nav-links.nav-desktop{gap:2.5rem!important;}
+.nav-links a,.nav-links.nav-desktop a{font-size:0.85rem!important;letter-spacing:0.06em!important;}
+@media(max-width:900px){body>nav{padding:1rem 1.5rem!important;}}
 </style>
 <script>
 function toggleFaq(btn){
@@ -69,6 +72,16 @@ function toggleFaq(btn){
 ]}
 ]}
 </script>
+<style>
+/* ===== HOMEPAGE-STYLE HERO OVERRIDE ===== */
+.page-hero { padding: 3.5rem 4rem 5rem !important; text-align: left !important; min-height: 72vh !important; display: flex !important; flex-direction: column !important; justify-content: flex-start !important; }
+.page-hero-inner { max-width: 800px !important; margin: 0 !important; }
+.page-hero-badge { display: flex !important; align-items: center !important; gap: 0.75rem !important; background: transparent !important; border: none !important; padding: 0 !important; color: var(--yellow) !important; font-size: 0.75rem !important; letter-spacing: 0.2em !important; text-transform: uppercase !important; font-weight: 500 !important; margin-bottom: 1.5rem !important; border-radius: 0 !important; }
+.page-hero-badge::before { content: '' !important; display: block !important; width: 2rem !important; height: 1px !important; background: var(--yellow) !important; flex-shrink: 0 !important; }
+.page-hero h1 { font-size: clamp(2.8rem, 6vw, 5rem) !important; font-weight: 500 !important; text-align: left !important; max-width: 800px !important; }
+.page-hero p { text-align: left !important; margin: 0 0 2.5rem !important; font-weight: 300 !important; font-size: 1.1rem !important; }
+.page-hero .hero-actions { justify-content: flex-start !important; }
+</style>
 </head>
 <body>
   <nav>
@@ -83,8 +96,8 @@ function toggleFaq(btn){
       <li><a href="/requirements/">Requirements</a></li>
       <li><a href="/pricing/">Pricing</a></li>
       <li><a href="/process/">Process</a></li>
-      <li><a href="/blog/">Guides</a></li>
       <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/blog/">Guides</a></li>
       <li><a href="https://dashboard.platinumlegalspain.com/student-visa" class="nav-cta" rel="noopener">Start Application</a></li>
     </ul>
   </nav>
@@ -95,8 +108,8 @@ function toggleFaq(btn){
     <a href="/requirements/">Requirements</a>
     <a href="/pricing/">Pricing</a>
     <a href="/process/">Process</a>
-    <a href="/blog/">Guides</a>
     <a href="/faq/">FAQ</a>
+    <a href="/blog/">Guides</a>
     <a href="/contact/">Contact</a>
     <div class="mobile-menu-bottom">
       <a href="https://dashboard.platinumlegalspain.com/student-visa" class="mobile-menu-pill pill-red" rel="noopener">Start Application &#x2192;</a>
