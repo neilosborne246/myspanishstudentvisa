@@ -137,6 +137,54 @@
               "@type": "Answer",
               "text": "We recommend starting at least 3 months before you intend to move. Criminal record certificates, apostilles, and sworn translations can each take several weeks to obtain, especially for applicants outside Europe. Consulate appointment slots also fill up quickly in peak season (June–September)."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the EX-00 form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The EX-00 is the official Spanish national visa application form that must be completed by every applicant. It must be filled in in Spanish, printed, and signed in blue or black ink. Errors or omissions are among the most common causes of processing delays."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a parent sponsor my Spain student visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You do not need the funds in your own name. A parent or legal guardian can sponsor you with a formal sponsorship letter, their ID, proof of relationship, and 3–6 months of bank statements showing the required funds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need proof of accommodation for a Spain student visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You must provide proof of accommodation arranged in Spain — such as a rental contract, university residence offer, or a notarised host family letter. Some consulates accept a booking confirmation for initial accommodation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of courses qualify for a Spain student visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Qualifying courses include university degrees, Masters programmes, official language school certificates, vocational training (FP) programmes, research programmes, and accredited professional development programmes. The course must typically be full-time — a minimum of 20 hours per week."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I work while on a Spain student visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Spain student visa does not include an automatic right to work. Once you have your TIE as a student resident, you may apply separately for authorisation to work part-time (up to 30 hours per week). This requires a separate application after arrival in Spain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if my Spain student visa application is refused?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If your application is refused, you will receive a written decision with reasons and have the right to appeal within one month or request reconsideration. Common grounds for refusal include incomplete documentation, insufficient financial proof, or a non-compliant health insurance policy."
+            }
           }
         ]
       }
@@ -366,8 +414,8 @@
       border-radius: var(--r-lg);
       padding: 1.8rem;
     }
-    .req-aside h4 { font-family: var(--ff-display); font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem; color: var(--yellow); }
-    .req-aside p, .req-aside li { font-size: .92rem; color: rgba(255,255,255,.8); line-height: 1.6; }
+    .req-aside h4 { font-family: var(--ff-display); font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem; color: #7a6000; }
+    .req-aside p, .req-aside li { font-size: .92rem; color: var(--navy); line-height: 1.6; }
     .req-aside ul { list-style: disc; padding-left: 1.2rem; display: flex; flex-direction: column; gap: .5rem; margin-top: .75rem; }
 
     /* ── DETAIL SECTIONS ── */
@@ -407,13 +455,14 @@
       width: 100%; border-collapse: collapse; margin-top: 1.5rem; font-size: .92rem;
     }
     .fin-table th {
-      background: var(--navy); color: var(--white);
+      background: rgba(255,255,255,.15); color: var(--white);
       padding: .75rem 1rem; text-align: left; font-size: .82rem;
+      border-bottom: 2px solid rgba(255,255,255,.2);
     }
-    .fin-table td { padding: .75rem 1rem; border-bottom: 1px solid var(--grey-100); }
+    .fin-table td { padding: .75rem 1rem; border-bottom: 1px solid rgba(255,255,255,.08); color: rgba(255,255,255,.85); }
     .fin-table tr:last-child td { border-bottom: none; }
-    .fin-table tr:nth-child(even) td { background: var(--grey-100); }
-    .fin-table .highlight-row td { background: rgba(250,207,57,.12); font-weight: 600; }
+    .fin-table tr:nth-child(even) td { background: rgba(255,255,255,.06); color: rgba(255,255,255,.85); }
+    .fin-table .highlight-row td { background: rgba(250,207,57,.2); font-weight: 600; color: var(--white); }
 
     /* ── SUB-PAGE LINKS ── */
     .sub-links {
@@ -423,16 +472,20 @@
       margin-top: 2rem;
     }
     .sub-link-card {
-      background: var(--navy-mid);
+      background: var(--white);
+      border: 1px solid var(--grey-100);
+      border-left: 4px solid var(--red);
       border-radius: var(--r-md);
       padding: 1.2rem 1.4rem;
       display: flex; align-items: center; justify-content: space-between;
       gap: 1rem;
-      transition: background .2s;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .2s, border-left-color .2s, transform .15s;
     }
-    .sub-link-card:hover { background: #224870; }
-    .sub-link-card span { font-size: .92rem; font-weight: 600; color: var(--white); }
-    .sub-link-card svg { flex-shrink: 0; opacity: .6; }
+    .sub-link-card:hover { box-shadow: var(--shadow-md); border-left-color: var(--yellow); transform: translateY(-2px); }
+    .sub-link-card span { font-size: .92rem; font-weight: 600; color: var(--navy); }
+    .sub-link-card svg { flex-shrink: 0; color: var(--red); transition: color .2s; }
+    .sub-link-card:hover svg { color: var(--navy); }
 
     /* ── FAQ ── */
     .faq-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
@@ -866,7 +919,7 @@ body>nav { min-height: 130px; }
     </section>
 
     <!-- DEEP DIVE LINKS -->
-    <section class="section section--navy-mid">
+    <section class="section section--cream">
       <div class="section-inner">
         <span class="section-label">Detailed Guides</span>
         <h2 class="section-title">Explore Every Requirement</h2>
@@ -875,51 +928,51 @@ body>nav { min-height: 130px; }
         <div class="sub-links">
           <a class="sub-link-card" href="/requirements/checklist/">
             <span>📋 Full Document Checklist</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/documents/">
             <span>📁 Documents Overview</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/financial/">
             <span>💶 Financial Proof Requirements</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/health-insurance/">
             <span>🏥 Health Insurance Guide</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/criminal-record/">
             <span>🔏 Criminal Record Certificate</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/medical-certificate/">
             <span>🩺 Medical Certificate</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/apostille/">
             <span>📌 Apostille Guide</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/sworn-translation/">
             <span>🌐 Sworn Translation Guide</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/ex00-form/">
             <span>📝 EX-00 Form Guide</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/proof-of-enrolment/">
             <span>🎓 Proof of Enrolment</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/proof-of-accommodation/">
             <span>🏠 Proof of Accommodation</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="sub-link-card" href="/requirements/bank-statements/">
             <span>💳 Bank Statements Guide</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
@@ -933,48 +986,18 @@ body>nav { min-height: 130px; }
         <p class="section-intro">Answers to the most frequently asked questions about the Spain student visa document requirements.</p>
 
         <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-q">
-              <span>What are the main requirements for a Spain student visa?</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="faq-a">The core Spain student visa requirements are: a valid passport (6+ months' remaining validity), completed EX-00 form, letter of acceptance from a recognised Spanish institution, proof of financial means (≈€600/month), private health insurance covering Spain, an apostilled criminal record certificate, medical certificate, proof of accommodation, and sworn Spanish translations of all foreign-language documents.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">
-              <span>How much money do I need to show for a Spain student visa?</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="faq-a">You need to demonstrate approximately €600 per month for the full duration of your course — so roughly €7,200 for a one-year programme. These funds can be in your personal bank account, a sponsor's account (with a formal sponsorship letter), or a combination of both. The funds should ideally have been in the account for at least 3 months.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">
-              <span>Does my criminal record certificate need an apostille?</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="faq-a">Yes. Your criminal record certificate must carry a Hague Apostille from your home country's competent authority. It must also be recent (issued within 3–6 months of your appointment) and accompanied by a sworn Spanish translation if it is in English or any other language.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">
-              <span>What health insurance do I need for a Spain student visa?</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="faq-a">You need private health insurance with full coverage in Spain — no copayments, no deductibles, and no geographic exclusions. It must cover the full duration of your visa. Your university's student card is not sufficient. Providers such as Sanitas, Adeslas, or specialist expat insurers are widely accepted. We can help you source the right policy.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">
-              <span>Do all my documents need to be translated into Spanish?</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="faq-a">Any document in a language other than Spanish must be accompanied by an official sworn translation carried out by a translator certified by Spain's Ministry of Foreign Affairs. Online or informal translations are not accepted. Our service includes sworn translations as standard — you don't need to arrange them separately.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">
-              <span>How early should I start gathering my documents?</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </button>
-            <div class="faq-a">Start at least 3 months before your intended travel date. Criminal record certificates, apostilles, and sworn translations each take several weeks. Add to this the time needed to secure a consulate appointment — which in peak months (June–September) can be fully booked 2–3 months in advance. Earlier is always safer.</div>
-          </div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What are the main requirements for a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">The core Spain student visa requirements are: a valid passport (6+ months' remaining validity), completed EX-00 form, letter of acceptance from a recognised Spanish institution, proof of financial means (approximately €600/month), private health insurance covering Spain, an apostilled criminal record certificate, medical certificate, proof of accommodation, and sworn Spanish translations of all foreign-language documents.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How much money do I need to show for a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">You need to demonstrate approximately €600 per month for the full duration of your course — so roughly €7,200 for a one-year programme. These funds can be in your personal bank account, a sponsor's account (with a formal sponsorship letter), or a combination of both. The funds should ideally have been in the account for at least 3 months.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Does my criminal record certificate need an apostille?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">Yes. Your criminal record certificate must carry a Hague Apostille from your home country's competent authority. It must also be recent (issued within 3–6 months of your appointment) and accompanied by a sworn Spanish translation if it is in English or any other language.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What health insurance do I need for a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">You need private health insurance with full coverage in Spain — no copayments, no deductibles, and no geographic exclusions. It must cover the full duration of your visa. Your university's student card is not sufficient. Providers such as Sanitas, Adeslas, or specialist expat insurers are widely accepted. We can help you source the right policy.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do all my documents need to be translated into Spanish?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">Any document in a language other than Spanish must be accompanied by an official sworn translation carried out by a translator certified by Spain's Ministry of Foreign Affairs. Online or informal translations are not accepted. Our service includes sworn translations as standard — you don't need to arrange them separately.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How early should I start gathering my documents?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">Start at least 3 months before your intended travel date. Criminal record certificates, apostilles, and sworn translations each take several weeks. Add to this the time needed to secure a consulate appointment — which in peak months (June–September) can be fully booked 2–3 months in advance. Earlier is always safer.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What is the EX-00 form?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">The EX-00 is the official Spanish national visa application form that must be completed by every applicant. It must be filled in in Spanish, printed, and signed in blue or black ink. Errors or omissions on this form are among the most common causes of processing delays. Our service includes completing the EX-00 for you.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Can a parent sponsor my Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">Yes. You do not need the funds in your own name. A parent or legal guardian can sponsor you — provided they supply a formal sponsorship letter, their ID, proof of relationship, and 3–6 months of their bank statements showing the required funds (approximately €600 per month of your course).</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do I need proof of accommodation for a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">Yes. You must provide proof that you have accommodation arranged in Spain — such as a rental contract, university residence offer, or a notarised host family letter. Some consulates accept a booking confirmation for initial accommodation. The address must be a real residential address in Spain, not a hotel or short-term rental.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What types of courses qualify for a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">Qualifying courses include: university degrees and Masters programmes at accredited institutions, official language school certificates (such as DELE preparation), vocational training (FP) programmes, research programmes at recognised institutes, and accredited professional development programmes. The course must be full-time — typically a minimum of 20 hours per week.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Can I work while on a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">The Spain student visa does not include an automatic right to work. However, once you have your Tarjeta de Identidad de Extranjero (TIE) as a student resident, you may apply separately for authorisation to work part-time (up to 30 hours per week). This is not the same as the initial visa and requires a separate application after you arrive in Spain.</div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What happens if my Spain student visa application is refused?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a">If your application is refused, you will receive a written decision with reasons. You have the right to appeal the decision within one month, or in some cases to request reconsideration. Common grounds for refusal include incomplete documentation, insufficient financial proof, or a health insurance policy that does not meet the requirements. Our lawyers will advise on the best strategy if a refusal occurs.</div></div>
         </div>
       </div>
     </section>
@@ -1021,12 +1044,12 @@ body>nav { min-height: 130px; }
         <p class="footer-heading">Other Visa Types</p>
         <ul class="footer-list">
           <li><a href="https://myspanishnlv.com" rel="noopener">Non-Lucrative Visa (NLV)</a></li>
-          <li><a href="https://myspanishstudentvisa.com" rel="noopener">Student Visa</a></li>
+          <li><a href="https://myspanishdnv.com" rel="noopener">My Spanish DNV</a></li>
         </ul>
         <p class="footer-heading" style="margin-top:1.5rem;">Services</p>
         <ul class="footer-list">
-          <li><a href="https://spanish-healthinsurance.com" rel="noopener">Health Insurance Spain</a></li>
-          <li><a href="https://247expatinsurance.com" rel="noopener">Expat Insurance</a></li>
+          <li><a href="https://spanish-healthinsurance.com" rel="noopener">Spanish Health Insurance</a></li>
+          <li><a href="https://247expatinsurance.com" rel="noopener">247 Expat Insurance</a></li>
           <li><a href="https://dashboard.platinumlegalspain.com/student-visa" rel="noopener">Start Application</a></li>
         </ul>
       </div>
@@ -1060,18 +1083,6 @@ body>nav { min-height: 130px; }
   </div>
 
   <script>
-    // Mobile menu
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuClose = document.getElementById('menuClose');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.add('open');
-      menuBtn.setAttribute('aria-expanded', 'true');
-    });
-    mobileMenuClose.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    });
 
     // FAQ accordion
     document.querySelectorAll('.faq-q').forEach(btn => {
