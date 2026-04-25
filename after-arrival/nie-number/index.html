@@ -181,7 +181,7 @@
   </script>
 <style>
 /* ===== NAV UNIFIED ===== */
-nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(12,25,48,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);}
+body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(12,25,48,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);}
 .nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;}
 .nav-logo-img{height:80px;width:auto;display:block;}
 .nav-links.nav-desktop{display:flex;gap:1.8rem;list-style:none;align-items:center;}
@@ -210,7 +210,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:cen
 .nav-logo img, .nav-logo-img { height: 108px !important; width: auto !important; }
 @media(max-width:900px){ .nav-logo img, .nav-logo-img { height: 72px !important; } }
 body { padding-top: 145px !important; }
-nav { min-height: 130px; }
+body>nav { min-height: 130px; }
 </style>
 </head>
 <body>
@@ -277,7 +277,7 @@ nav { min-height: 130px; }
     </div>
   </section>
 
-  <nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="breadcrumb" aria-label="Breadcrumb">
     <div class="breadcrumb-inner">
       <a href="/">Home</a>
       <span>›</span>

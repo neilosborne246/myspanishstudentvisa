@@ -29,7 +29,7 @@
     code{font-family:monospace;font-size:.85em;background:var(--grey-100);padding:.1em .35em;border-radius:3px;}
     .callout{background:var(--cream);border-left:4px solid var(--yellow);border-radius:0 8px 8px 0;padding:.9rem 1.2rem;margin:1.2rem 0;font-size:.92rem;color:var(--navy);}
     .legal-nav{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:4rem;padding-top:2rem;border-top:1px solid var(--grey-100);}.legal-nav a{font-size:.82rem;color:var(--grey-600);text-decoration:none;border:1px solid var(--grey-100);border-radius:999px;padding:.3rem .85rem;transition:border-color .2s;}.legal-nav a:hover{border-color:var(--red);color:var(--red);}
-    body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(12,25,48,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);}
+    body>body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(12,25,48,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);}
     .nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;text-decoration:none!important;}
     .nav-logo-img{height:80px;width:auto;display:block;}
     .nav-links.nav-desktop{display:flex;gap:1.8rem;list-style:none;align-items:center;}
@@ -51,14 +51,14 @@
     body{padding-top:100px;}
     .table-wrap{overflow-x:auto;margin:1rem 0 1.5rem;}
     @media(max-width:900px){.nav-links.nav-desktop{display:none!important;}.nav-toggle{display:flex!important;}.nav-logo-img{height:60px;}}
-    @media(max-width:700px){.page-wrap{padding:2.5rem 1.25rem 4rem;}.page-title{font-size:1.7rem;}body>nav{padding:1rem 1.5rem;}}
+    @media(max-width:700px){.page-wrap{padding:2.5rem 1.25rem 4rem;}.page-title{font-size:1.7rem;}body>body>nav{padding:1rem 1.5rem;}}
   </style>
   <!-- CookieYes --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/3de4d65b13e3a7672ccb2f227e42b41c/script.js"></script> <!-- End CookieYes -->
 <style id="nav-fix-2">
 .nav-logo img, .nav-logo-img { height: 108px !important; width: auto !important; }
 @media(max-width:900px){ .nav-logo img, .nav-logo-img { height: 72px !important; } }
 body { padding-top: 145px !important; }
-body>nav { min-height: 130px; }
+body>body>nav { min-height: 130px; }
 </style>
 </head>
 <body>
