@@ -334,7 +334,7 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
 .pill-yellow{background:#facf39;color:#0c1930;}
 .footer-logo-img,.footer-logo img{height:108px!important;width:auto!important;}
 @media(max-width:900px){.nav-links.nav-desktop{display:none!important;}.nav-toggle{display:flex!important;}.nav-logo-img{height:64px;}}
-</style>
+.footer-visa-pills{display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;}.footer-pill{display:inline-block;background:#facf39;color:#0c1930;padding:0.4rem 1rem;border-radius:40px;font-size:0.78rem;font-weight:600;text-decoration:none;transition:opacity 0.2s;white-space:nowrap;}.footer-pill:hover{opacity:0.82;}.footer-pill--outline{background:transparent;color:#facf39;border:1px solid #facf39;}.footer-pill--outline:hover{background:#facf39;color:#0c1930;}</style>
 <!-- CookieYes --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/3de4d65b13e3a7672ccb2f227e42b41c/script.js"></script> <!-- End CookieYes -->
 <style id="nav-fix-2">
 .nav-logo img, .nav-logo-img { height: 108px !important;
@@ -994,10 +994,11 @@ body>nav { min-height: 130px; padding: 1.25rem 4rem !important; }
 
       <div class="footer-col">
         <p class="footer-heading">Other Visa Types</p>
-        <ul class="footer-list">
-          <li><a href="https://myspanishnlv.com" rel="noopener">Non-Lucrative Visa (NLV)</a></li>
-          <li><a href="https://myspanishdnv.com" rel="noopener">My Spanish DNV</a></li>
-        </ul>
+        <div class="footer-visa-pills">
+          <a href="https://myspanishnlv.com" class="footer-pill" rel="noopener">Non-Lucrative Visa &middot; My Spanish NLV</a>
+          <a href="https://myspanishdnv.com" class="footer-pill" rel="noopener">Digital Nomad Visa &middot; My Spanish DNV</a>
+          <a href="https://www.myspanishvisa.com" class="footer-pill footer-pill--outline" rel="noopener">All other visas &middot; My Spanish Visa</a>
+        </div>
         <p class="footer-heading" style="margin-top:1.5rem;">Services</p>
         <ul class="footer-list">
           <li><a href="https://spanish-healthinsurance.com" rel="noopener">Spanish Health Insurance</a></li>
