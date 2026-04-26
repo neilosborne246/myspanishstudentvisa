@@ -199,7 +199,12 @@
               "@type": "Answer",
               "text": "Your marriage certificate must be (1) an official certified copy issued by the relevant civil registry authority, (2) apostilled under the Hague Convention (or legalised if your country is not a signatory), and (3) accompanied by a sworn Spanish translation (traducción jurada) produced by a sworn translator recognised by the Spanish Ministry of Foreign Affairs. Photocopies, notarised copies without apostille, and Google Translate outputs are not accepted."
             }
-          }
+          },
+          {"@type":"Question","name":"Can my spouse apply for a student visa independently while I study in Spain?","acceptedAnswer":{"@type":"Answer","text":"Your spouse can apply for their own independent student visa if they are also enrolling in a qualifying course of study in Spain. If they are not studying, the dependant visa route is the correct one. The two applications are independent — your spouse's independent student visa would have its own conditions, its own course requirement, and its own financial thresholds."}},
+          {"@type":"Question","name":"Does my spouse's dependant visa allow them to open a Spanish bank account?","acceptedAnswer":{"@type":"Answer","text":"Yes — holding a valid Spanish residence authorisation (TIE card) allows your spouse to open a bank account in Spain. They will need their passport, TIE card, and NIE number. The NIE (Número de Identificación de Extranjero) is assigned when the TIE is issued. Most Spanish banks require an appointment and will accept the TIE as proof of legal residence."}},
+          {"@type":"Question","name":"What if my partner and I registered our partnership in a country Spain does not recognise?","acceptedAnswer":{"@type":"Answer","text":"Spain recognises civil partnerships registered in most EU and many non-EU countries, but there are cases where the format of a foreign registered partnership does not map cleanly onto Spanish requirements. In these cases, an immigration specialist can advise on whether your registration is likely to be accepted and whether any supplementary documentation strengthens the claim. Some couples in this situation choose to formally marry before applying to remove any ambiguity."}},
+          {"@type":"Question","name":"Can my spouse travel to Spain before their dependant visa is approved?","acceptedAnswer":{"@type":"Answer","text":"If your spouse is a national of a country with visa-free Schengen access, they can travel to Spain as a tourist for up to 90 days while the dependant application is being processed. However, they cannot legally stay in Spain beyond their tourist allowance while waiting for the dependant visa. If processing takes longer than expected, they may need to leave and return once the visa is issued."}},
+          {"@type":"Question","name":"How long after I arrive in Spain can I apply for my spouse to join me?","acceptedAnswer":{"@type":"Answer","text":"If you did not apply for your spouse's dependant visa alongside your own student visa, your spouse can apply after you have your student visa or TIE card. There is no specific minimum waiting period, but you need to demonstrate that you are actively enrolled and that the financial requirements are still met. Applying from your spouse's home country at their local Spanish consulate is typically the cleanest approach."}}
         ]
       }
     ]
@@ -240,6 +245,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -722,6 +729,30 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           </button>
           <div class="faq-a">Your marriage certificate must be: (1) an official certified copy issued by the relevant civil registry or government authority — not a commemorative certificate or church certificate; (2) apostilled under the Hague Convention if your country is a signatory (most countries are), or legalised through the consulate chain if not; and (3) accompanied by a sworn Spanish translation (traducción jurada) produced by a sworn translator officially recognised by the Spanish Ministry of Foreign Affairs. Simple notarised translations, official translations by non-sworn translators, or machine translations are not accepted.</div>
         </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can my spouse apply for a student visa independently while I study in Spain?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Your spouse can apply for their own independent student visa if they are also enrolling in a qualifying course of study in Spain. If they are not studying, the dependant visa route is the correct one. An independent student visa would have its own course requirement, its own financial thresholds, and its own conditions — separate from your visa entirely.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Does my spouse's dependant visa allow them to open a Spanish bank account?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes — holding a valid Spanish TIE residence card allows your spouse to open a bank account in Spain. They will need their passport, TIE card, and NIE number (assigned when the TIE is issued). Most Spanish banks require an appointment and will accept the TIE as proof of legal residence.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What if my partner and I registered our partnership in a country Spain may not recognise?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Spain recognises civil partnerships registered in most EU and many non-EU countries, but there are edge cases where a foreign registered partnership format does not map cleanly onto Spanish requirements. An immigration specialist can advise on whether your registration is likely to be accepted. Some couples in this situation choose to formally marry before applying to remove any ambiguity.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can my spouse travel to Spain before their dependant visa is approved?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">If your spouse is a national of a country with visa-free Schengen access, they can travel to Spain as a tourist for up to 90 days while the dependant application is being processed. However, they cannot legally stay beyond their tourist allowance while waiting for the visa. If processing takes longer than expected, they may need to leave and return once the visa is issued.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How long after I arrive in Spain can I apply for my spouse to join me?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">If you did not apply for your spouse's dependant visa alongside your own student visa, your spouse can apply after you have your student visa or TIE card. There is no specific minimum waiting period, but you need to demonstrate continued enrolment and that financial requirements are still met. Applying from your spouse's home country at their local Spanish consulate is typically the cleanest approach.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What happens to my spouse's dependant visa if my student visa is refused at renewal?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">If your student visa renewal is refused, your spouse's dependant visa renewal will also be refused, as it is entirely dependent on your own status. Both you and your spouse would need to either appeal the refusal or leave Spain within the grace period. This is one of the reasons it is important to maintain your student status carefully — your spouse's legal residence in Spain depends on yours.</div>
+          </div>
       </div>
     </div>
   </section>
@@ -756,7 +787,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
     <div class="section-inner">
       <div class="cta-banner">
         <h2>Bring Your Partner to Spain — Get It Right First Time</h2>
-        <p>Our lawyers handle the complete joint application for you and your spouse simultaneously. One point of contact, zero missed documents, zero stress.</p>
+        <p>Our specialists handle the complete joint application for you and your spouse simultaneously. One point of contact, zero missed documents, zero stress.</p>
         <a class="btn-white" href="https://dashboard.platinumlegalspain.com/student-visa">Start Your Application</a>
       </div>
     </div>

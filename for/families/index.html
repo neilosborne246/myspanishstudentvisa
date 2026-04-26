@@ -47,7 +47,13 @@
           "@type": "Question",
           "name": "How much money do I need if I am bringing my family to Spain on a student visa?",
           "acceptedAnswer": {"@type": "Answer", "text": "The financial requirement increases with each family member. The baseline for the student is approximately €600–700 per month (100% IPREM). For each additional family member, you typically need to demonstrate an additional amount — the exact figure varies by consulate but is typically 50–100% of IPREM per dependant (approximately €300–600 per month per person). For a family of four (student + partner + 2 children), the total financial requirement can reach €1,500–2,400 per month, or approximately €18,000–29,000 per year in demonstrable funds."}
-        }
+        },
+        {"@type":"Question","name":"Can my spouse work in Spain while I study?","acceptedAnswer":{"@type":"Answer","text":"Not automatically. Spouses of student visa holders receive a dependant residence authorisation but not automatic work rights. To work in Spain, a spouse must apply for a separate work authorisation. If they have a job offer from a Spanish employer, the employer can apply for a work permit. For remote work for a non-Spanish employer, the digital nomad visa may be worth exploring as an alternative to the dependant route."}},
+        {"@type":"Question","name":"Does the whole family need to apply at the same time?","acceptedAnswer":{"@type":"Answer","text":"No — but applying simultaneously is strongly recommended. The student's visa must be approved before or alongside the family dependant applications. If you apply after arriving in Spain, the family reunification route from outside Spain typically requires you to have held your permit for at least one year before applying. Applying all together as a family unit from the start avoids this complication."}},
+        {"@type":"Question","name":"Do family members need their own health insurance policy?","acceptedAnswer":{"@type":"Answer","text":"Yes — each family member must have their own private health insurance covering Spain with no co-payments and a minimum of €30,000 coverage per person. A family policy that individually names each member is acceptable, but a single policy in the student's name alone is not sufficient for the dependants."}},
+        {"@type":"Question","name":"How long does the family dependant visa processing take?","acceptedAnswer":{"@type":"Answer","text":"When submitted simultaneously with the student visa application, family dependant applications are typically processed on the same timeline — 4–12 weeks depending on the consulate. Submitting all applications together at the same appointment with complete documentation gives the best chance of simultaneous approval."}},
+        {"@type":"Question","name":"Can family members study or take courses in Spain on a dependant visa?","acceptedAnswer":{"@type":"Answer","text":"Yes — dependant family members holding a Spanish residence authorisation are entitled to access education in Spain. Adult dependants can enrol in language courses, university programmes, or professional training. Children can attend Spanish schools on the same basis as Spanish children. Education access is one of the significant practical benefits of bringing your family to Spain together."}},
+        {"@type":"Question","name":"What is the most common reason a family student visa application is rejected?","acceptedAnswer":{"@type":"Answer","text":"Insufficient financial proof is the most common reason — particularly where the student's bank statements do not show enough funds to cover the entire family at the required IPREM thresholds. The second most common reason is incomplete or incorrectly authenticated documents for the dependants, particularly apostilles and sworn translations of birth certificates and marriage certificates."}}
       ]
     }
   ]
@@ -198,6 +204,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -405,7 +413,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
         </tbody>
         <tfoot>
           <tr class="total">
-            <td colspan="4">These are indicative figures based on 2026 IPREM levels. Actual requirements vary by consulate and autonomous community. Always confirm with a qualified immigration lawyer before applying.</td>
+            <td colspan="4">These are indicative figures based on 2026 IPREM levels. Actual requirements vary by consulate and autonomous community. Always confirm with a qualified immigration specialist before applying.</td>
           </tr>
         </tfoot>
       </table>
@@ -542,6 +550,30 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
         </button>
         <div class="faq-a">This is genuinely a personal and financial calculation. Bringing the whole family from day one involves higher financial requirements, more complex applications, and the logistics of family housing in a new country. But it avoids separation, gives children the full Spanish immersion experience, and means the family adapts to Spain together — which has long-term integration benefits. For stays of 1 year or less, some families choose for the student to go first and the family to join for school holiday visits. For stays of 2+ years, bringing the family together from the start typically proves better for family wellbeing and the children's Spanish language acquisition. Our team can help you model the financial and logistical feasibility of your specific family situation.</div>
       </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do family members need their own health insurance policy?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes — each family member must have their own private health insurance covering Spain with no co-payments and a minimum of €30,000 coverage per person. A family policy that individually names each member is acceptable, but a single policy in the student's name alone is not sufficient for the dependants.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How long does the family dependant visa take to process?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">When submitted alongside the student visa application, family dependant applications are typically processed on the same timeline — 4–12 weeks depending on the consulate. Submitting all applications together at the same appointment with complete documentation gives the best chance of simultaneous approval and avoids staggered decisions.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can family members study or take courses in Spain on a dependant visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes — dependant family members holding a Spanish residence authorisation are entitled to access education in Spain. Adult dependants can enrol in language courses, university programmes, or professional training. Children can attend Spanish schools on the same basis as Spanish children. Education access is one of the significant practical benefits of bringing your family to Spain together.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What is the most common reason a family student visa application is rejected?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Insufficient financial proof is the most common reason — particularly where the student's bank statements do not show enough funds to cover the entire family at the required IPREM thresholds. The second most common reason is incomplete or incorrectly authenticated documents for the dependants, particularly apostilles and sworn translations of birth and marriage certificates.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do my children need to be vaccinated to attend school in Spain?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Spain recommends the standard childhood vaccination schedule, and schools may request a vaccination record at enrolment. Vaccination is not legally mandatory for school attendance in Spain (unlike in some other countries), but having a complete vaccination history makes the school enrolment process smoother. If your child's vaccinations are not up to date with the Spanish calendar, local health centres (centros de salud) can administer catch-up vaccinations free of charge.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can my spouse get a work authorisation independently in Spain?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes — once your spouse has their Spanish residence card (TIE), they can apply for a separate work authorisation at the local Oficina de Extranjería. The processing time is typically 1–3 months. Once approved, the authorisation allows employed work, self-employment, or both. Having a job offer lined up before applying significantly speeds the process and gives your spouse immediate income once the authorisation is granted.</div>
+          </div>
     </div>
   </div>
 </section>

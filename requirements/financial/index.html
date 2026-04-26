@@ -86,7 +86,14 @@
             "@type": "Question",
             "name": "Does a scholarship count as financial proof?",
             "acceptedAnswer": { "@type": "Answer", "text": "Yes. An official scholarship award letter from a recognised organisation (government body, university, foundation) is accepted as financial proof — provided it states the amount and duration of funding. You may still need to show some personal funds to cover living expenses not covered by the scholarship." }
-          }
+          },
+          {"@type":"Question","name":"Can I use savings held in a foreign currency?","acceptedAnswer":{"@type":"Answer","text":"Yes, savings in a non-Euro currency are accepted provided the equivalent value in euros meets the threshold. Include the current exchange rate when presenting the documents."}},
+          {"@type":"Question","name":"Does the €600/month requirement include tuition fees?","acceptedAnswer":{"@type":"Answer","text":"No. The €600/month threshold covers living costs only. You need sufficient funds for both living costs and tuition fees. Providing a tuition payment receipt demonstrating fees are already paid significantly strengthens your application."}},
+          {"@type":"Question","name":"Can I combine my own savings with a sponsorship letter?","acceptedAnswer":{"@type":"Answer","text":"Yes. A combined approach — your own savings plus a parental sponsorship letter — is accepted. The totals simply need to add up to the required threshold, with both sets of documents clearly labelled and including sworn translations."}},
+          {"@type":"Question","name":"Is cryptocurrency or investment portfolio accepted as financial proof?","acceptedAnswer":{"@type":"Answer","text":"Cryptocurrency and investment portfolios are generally not accepted as primary financial proof. Consulates want liquid, readily accessible funds in a bank account. Convert holdings to cash and allow the balance to settle for at least 3 months before applying."}},
+          {"@type":"Question","name":"What if my income is irregular or freelance-based?","acceptedAnswer":{"@type":"Answer","text":"Irregular or freelance income is acceptable as long as your bank statements show a consistent overall balance at or above the threshold. Showing a savings buffer well above the minimum is the best strategy. Tax returns or invoices can be included as supplementary evidence."}},
+          {"@type":"Question","name":"Do I need to prove financial means for my dependants too?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you bring family members to Spain alongside you, additional financial proof is required for each dependant — approximately an additional €150 per month per dependant on top of your own living costs."}},
+          {"@type":"Question","name":"What if my bank statements show a brief dip below the threshold?","acceptedAnswer":{"@type":"Answer","text":"An occasional brief dip is usually not fatal provided the overall average balance is strong and the dip is clearly explained by a regular expense. The consulate looks for a pattern of financial stability. A covering note from your immigration specialist explaining an unusual dip can help."}}
         ]
       }
     ]
@@ -261,6 +268,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -555,7 +564,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           <div class="info-box-icon">⚠️</div>
           <div class="info-box-content" style="color:rgba(255,255,255,.85);">
             <h4 style="color:var(--yellow);">The 'Parked Funds' Problem</h4>
-            <p>One of the most common financial proof rejections occurs when an applicant suddenly deposits a large sum into an account shortly before applying — funds borrowed or transferred temporarily to meet the threshold. Consular officers are trained to spot this pattern. If your funds are from a recent single deposit, explain the source honestly in your application. Our lawyers can advise on the best way to present unusual financial situations.</p>
+            <p>One of the most common financial proof rejections occurs when an applicant suddenly deposits a large sum into an account shortly before applying — funds borrowed or transferred temporarily to meet the threshold. Consular officers are trained to spot this pattern. If your funds are from a recent single deposit, explain the source honestly in your application. Our specialists can advise on the best way to present unusual financial situations.</p>
           </div>
         </div>
       </div>
@@ -622,6 +631,34 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
             <button class="faq-q"><span>Can I use savings held in a foreign currency?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
             <div class="faq-a">Yes, savings in a non-Euro currency are accepted, provided the equivalent value in euros meets the threshold. Include the current exchange rate when presenting the documents — a note on the conversion is helpful. Be aware that if the exchange rate fluctuates significantly between application and the consulate appointment, you may need to demonstrate that the converted value still meets the threshold.</div>
           </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Does the €600/month requirement include tuition fees?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">No. The approximately €600 per month threshold covers living costs only — it does not include tuition fees. You need to demonstrate sufficient funds for both: living costs (€600/month × course duration) plus your full tuition fees on top. If you have already paid your tuition fees before applying, providing a payment receipt significantly strengthens your application, as it demonstrates the tuition cost is already covered and only living costs need to be funded going forward.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I combine my own savings with a sponsorship letter?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes. A combined approach — your own savings plus a parental sponsorship letter — is accepted. For example, if you have €4,000 of your own and your parent agrees to cover the remaining €3,200 for a 12-month programme, both your statements and your parent's sponsorship documentation can be presented together. The totals simply need to add up to the required threshold. Ensure both sets of documents are clearly labelled and include sworn translations.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Is cryptocurrency or investment portfolio accepted as financial proof?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Cryptocurrency holdings and investment portfolios are generally not accepted as primary financial proof for the Spain student visa. Consulates want to see liquid, readily accessible funds in a bank account. Some consulates may accept investment statements as supplementary evidence alongside bank statements, but they should not be relied on as the main evidence. Convert crypto or investment holdings to cash in a bank account and allow the balance to settle for at least 3 months before applying.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What if my income is irregular or freelance-based?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Irregular or freelance income is acceptable as long as your bank statements show a consistent overall balance at or above the threshold. What the consulate wants to see is that sufficient funds exist and are sustained — they are less concerned about where the income came from than whether the balance is adequate. If your income is variable, showing a savings buffer well above the minimum threshold is the best strategy. Tax returns or invoices can be included as supplementary evidence of your earning capacity.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do I need to prove financial means for my dependants too?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">If you are bringing family members (spouse or children) to Spain alongside you on a student visa, additional financial proof is required for each dependant. The threshold increases for each additional family member. You would need to demonstrate approximately an additional €150 per month for each dependant, on top of your own living costs. Dependants of student visa holders can apply as family members of a student — your immigration specialist can advise on the exact figures and documentation needed.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I work in Spain on a student visa to supplement my finances?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Spain's Type D student visa does permit limited part-time work — generally up to 20 hours per week — in certain circumstances, but work authorisation must be specifically applied for as part of your visa or residence permit application. Working without authorisation is a breach of your visa conditions. However, you should not plan to rely on future work income as financial proof for your initial application — the consulate wants to see funds already in place before you travel, not projected income from Spanish employment.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What if my bank statements show a brief dip below the threshold?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">An occasional brief dip below the threshold is usually not fatal to your application, provided the overall average balance is strong and the dip is clearly explained by a regular expense (rent, tuition payment, etc.) rather than irregular behaviour. What the consulate is looking for is a pattern of financial stability — not a perfect balance every day of the statement period. If you have a specific dip that concerns you, your immigration specialist can advise on how to present a covering note explaining it.</div>
+          </div>
         </div>
       </div>
     </section>
@@ -631,7 +668,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
       <div class="section-inner">
         <div class="cta-banner">
           <h2>Unsure If Your Finances Qualify?</h2>
-          <p>Our lawyers review your financial situation before you apply and advise on the best way to present your evidence — so you are not caught out at the consulate.</p>
+          <p>Our specialists review your financial situation before you apply and advise on the best way to present your evidence — so you are not caught out at the consulate.</p>
           <a class="btn-white" href="https://dashboard.platinumlegalspain.com/student-visa">Start Your Application</a>
         </div>
       </div>

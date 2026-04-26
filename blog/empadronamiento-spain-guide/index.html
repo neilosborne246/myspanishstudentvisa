@@ -96,6 +96,36 @@
             "@type": "Question",
             "name": "What if I am staying in student accommodation or a shared flat?",
             "acceptedAnswer": { "@type": "Answer", "text": "If you are in university halls or shared accommodation, you still need to register. Your landlord or accommodation provider must sign an Autorización de Empadronamiento (authorisation letter) and provide a copy of their ID or NIE, plus proof they own or have rights over the property. Many student residences have a standard procedure for this and can issue the letter quickly." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is empadronamiento in Spain?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Empadronamiento is the official process of registering your address with the local ayuntamiento (town hall) and being added to the padron municipal — the municipal population register. It is a legal obligation for all residents in Spain, including foreign students, and is required to access public services such as the health card and to complete your TIE card application." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need empadronamiento to get my TIE card?",
+            "acceptedAnswer": { "@type": "Answer", "text": "In most Spanish provinces, yes — the Oficina de Extranjería requires a certificado de empadronamiento as part of your TIE card application documents. You should complete empadronamiento as soon as you have a fixed address in Spain, ideally within the first week of arrival, so your certificate is ready when you book your TIE card appointment." }
+          },
+          {
+            "@type": "Question",
+            "name": "What documents do I need for empadronamiento?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You will typically need your passport (plus a copy), your student visa or TIE card, and proof of your address in Spain (rental contract, or a letter from your landlord/host confirming you live there). Some ayuntamientos also request the empadronamiento form completed in advance, which can usually be downloaded from the town hall website." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does empadronamiento take?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At the ayuntamiento, the registration itself takes around 15–30 minutes once you are seen. A certificado de empadronamiento (the certificate you need for other processes) is typically issued on the same day in smaller towns, or within a few days in busier cities like Madrid or Barcelona. Booking an appointment in advance speeds up the process considerably." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I do empadronamiento online in Spain?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Some larger cities (Madrid, Barcelona) allow online empadronamiento for those who already hold a digital certificate (certificado digital) or Cl@ve PIN. Most international students will not have these tools on arrival and will need to attend the ayuntamiento in person. Check your specific city's ayuntamiento website to see what options are available." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if my landlord refuses to let me register for empadronamiento?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A landlord cannot legally prevent you from registering your address — empadronamiento is a public right. If they refuse to provide a signed consent letter, you can report the address to the ayuntamiento, which has powers to verify residence independently. Some students in this situation rent a different room or ask the ayuntamiento for guidance on alternative registration pathways." }
           }
         ]
       },
@@ -252,6 +282,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -581,7 +613,32 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
             </button>
             <div class="faq-a">You can still register. For university halls or managed student residences, ask your accommodation office for a letter authorising you to register at the address for empadronamiento purposes — most have a standard template for this. For shared flats, the landlord (or the lead tenant if they have a legal sub-letting right) must sign an authorisation letter and provide a copy of their ID and the rental contract or property deed.</div>
           </div>
-        </div>
+        
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What is empadronamiento in Spain?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Empadronamiento is the official process of registering your address with the local ayuntamiento (town hall) and being added to the padron municipal — the municipal population register. It is a legal obligation for all residents in Spain, including foreign students, and is required to access public services such as the health card and to complete your TIE card application.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do I need empadronamiento to get my TIE card?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">In most Spanish provinces, yes — the Oficina de Extranjería requires a certificado de empadronamiento as part of your TIE card application documents. You should complete empadronamiento as soon as you have a fixed address in Spain, ideally within the first week of arrival, so your certificate is ready when you book your TIE card appointment.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What documents do I need for empadronamiento?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">You will typically need your passport (plus a copy), your student visa or TIE card, and proof of your address in Spain (rental contract, or a letter from your landlord/host confirming you live there). Some ayuntamientos also request the empadronamiento form completed in advance, which can usually be downloaded from the town hall website.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How long does empadronamiento take?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">At the ayuntamiento, the registration itself takes around 15–30 minutes once you are seen. A certificado de empadronamiento (the certificate you need for other processes) is typically issued on the same day in smaller towns, or within a few days in busier cities like Madrid or Barcelona. Booking an appointment in advance speeds up the process considerably.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I do empadronamiento online in Spain?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Some larger cities (Madrid, Barcelona) allow online empadronamiento for those who already hold a digital certificate (certificado digital) or Cl@ve PIN. Most international students will not have these tools on arrival and will need to attend the ayuntamiento in person. Check your specific city's ayuntamiento website to see what options are available.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What if my landlord refuses to let me register for empadronamiento?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">A landlord cannot legally prevent you from registering your address — empadronamiento is a public right. If they refuse to provide a signed consent letter, you can report the address to the ayuntamiento, which has powers to verify residence independently. Some students in this situation rent a different room or ask the ayuntamiento for guidance on alternative registration pathways.</div>
+          </div>
+</div>
       </div>
     </section>
 
@@ -589,7 +646,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
       <div class="section-inner">
         <div class="cta-banner">
           <h2>Need Help Navigating Life in Spain After Your Visa?</h2>
-          <p>Our immigration lawyers guide you through every step — from visa application to TIE card, empadronamiento to renewal. We handle the paperwork so you can focus on your studies.</p>
+          <p>Our immigration specialists guide you through every step — from visa application to TIE card, empadronamiento to renewal. We handle the paperwork so you can focus on your studies.</p>
           <a class="btn-white" href="https://dashboard.platinumlegalspain.com/student-visa">Start Your Application</a>
         </div>
       </div>

@@ -97,7 +97,7 @@
     .faq-item.open .faq-q svg{transform:rotate(45deg);}
     .faq-a{display:none;padding:0 1.4rem 1.2rem;font-size:.93rem;color:var(--grey-600);line-height:1.7;}
     .faq-item.open .faq-a{display:block;}
-    .cta-banner{background:var(--red);border-radius:var(--r-lg);padding:3rem 2.5rem;text-align:center;}
+    .cta-banner { background: transparent; padding: 0; text-align: center; }
     .cta-banner h2{font-family:var(--ff-display);font-size:1.8rem;font-weight:700;color:var(--white);margin-bottom:.75rem;}
     .cta-banner p{color:rgba(255,255,255,.85);margin-bottom:1.8rem;font-size:1.05rem;}
     .btn-white{background:var(--white);color:var(--red);padding:.85rem 2.2rem;border-radius:var(--r-pill);font-weight:700;font-size:1rem;display:inline-block;}
@@ -178,7 +178,13 @@
               "@type": "Answer",
               "text": "As a rough guide for 2026: a student alone needs approximately €600/month (100% IPREM). Adding a spouse or registered partner requires approximately €1,200/month (200% IPREM). Adding one child to that requires approximately €1,500/month (250% IPREM). Adding two children requires approximately €1,800/month (300% IPREM). These figures are minimum thresholds — having more funds documented gives a stronger application. Bank statements for the past 3–6 months are the standard evidence format."
             }
-          }
+          },
+          {"@type":"Question","name":"Does each family member need a separate health insurance policy?","acceptedAnswer":{"@type":"Answer","text":"Each dependant must have their own health insurance coverage clearly documented. A family policy that names all members individually is acceptable if it shows individual coverage of at least €30,000 per person with no co-payments. A single policy in the student's name alone is not sufficient for the dependants — each person named in the application must be identifiably covered."}},
+          {"@type":"Question","name":"Do children under 18 need a criminal record certificate for the family visa?","acceptedAnswer":{"@type":"Answer","text":"No — criminal record certificates are only required for adult applicants (typically those aged 18 and over). Minor children do not need to provide a criminal record certificate as part of their dependant visa application. Adult dependants, including adult children who qualify as dependants, must provide an apostilled criminal record certificate issued within the past 3 months."}},
+          {"@type":"Question","name":"What proof of accommodation is required for the family dependant application?","acceptedAnswer":{"@type":"Answer","text":"You need to demonstrate that the accommodation in Spain is sufficient for the entire family. Acceptable evidence includes a signed rental contract listing all residents, an ownership deed, or an official letter confirming the accommodation. Some consulates also accept a completed empadronamiento certificate if the student is already registered in Spain. The accommodation must be adequate for the number of people — a studio flat may not be deemed suitable for a family of four."}},
+          {"@type":"Question","name":"Do family visa documents expire and need to be collected close to the application date?","acceptedAnswer":{"@type":"Answer","text":"Yes — most supporting documents have validity windows that mean they must be collected relatively close to the application date. Criminal record certificates must be under 3 months old at the time of application. Health insurance must cover a future period. Bank statements should be from the past 1–3 months. Apostilles and sworn translations should also be recent. Poor document timing is one of the most common reasons for family application delays."}},
+          {"@type":"Question","name":"Can family members apply from a different country than the student?","acceptedAnswer":{"@type":"Answer","text":"Generally, each family member should apply at the Spanish consulate that has jurisdiction over their country of legal residence. If the student and family members all reside in the same country, this is straightforward. If family members are in different countries — for example, a spouse abroad while the student applies from their home country — each applies at their respective local consulate. The student's approval is typically needed before or simultaneously with the dependant applications."}},
+          {"@type":"Question","name":"What happens to family dependant visas at renewal time?","acceptedAnswer":{"@type":"Answer","text":"Family dependant visas must be renewed in Spain at the same time as the student's visa renewal. The renewal requires updated financial evidence, continued health insurance, proof of the student's continued enrolment, and a clean criminal record (for adults). The renewal fee applies to each family member. If any dependant's documents have lapsed — particularly the health insurance — this can block the entire family's renewal."}}
         ]
       }
     ]
@@ -219,6 +225,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -396,7 +404,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
         <span class="info-box-icon">🚨</span>
         <div class="info-box-content">
           <h4>Always confirm with your specific consulate</h4>
-          <p>Spanish consulates operate with a degree of autonomy. The requirements listed here reflect standard practice for 2026, but individual consulates — particularly in the US, UK, Canada, and Australia — sometimes impose additional requirements or slightly different format rules. Our lawyers confirm requirements with the specific consulate that has jurisdiction over your application before submission. This avoids surprises.</p>
+          <p>Spanish consulates operate with a degree of autonomy. The requirements listed here reflect standard practice for 2026, but individual consulates — particularly in the US, UK, Canada, and Australia — sometimes impose additional requirements or slightly different format rules. Our specialists confirm requirements with the specific consulate that has jurisdiction over your application before submission. This avoids surprises.</p>
         </div>
       </div>
     </div>
@@ -858,6 +866,30 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           </button>
           <div class="faq-a">This depends on the consulate. Many consulates allow — or even require — all family members to attend the same appointment. Others process applications separately. Contact your specific consulate to confirm their procedure for family applications. Where possible, submitting all applications simultaneously is strongly preferred as it ensures all applications are reviewed together, which typically results in simultaneous approval and reduces the risk of one application being approved while another is still pending.</div>
         </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Does each family member need a separate health insurance policy?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Each dependant must have their own health insurance coverage clearly documented. A family policy that names all members individually is acceptable if it shows individual coverage of at least €30,000 per person with no co-payments. A single policy in the student's name alone is not sufficient for the dependants — each person named in the application must be identifiably covered.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do children under 18 need a criminal record certificate for the family visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">No — criminal record certificates are only required for adult applicants (typically those aged 18 and over). Minor children do not need to provide a criminal record certificate. Adult dependants, including adult children who qualify as dependants, must provide an apostilled criminal record certificate issued within the past 3 months.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What proof of accommodation is required for the family dependant application?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">You need to demonstrate that the accommodation in Spain is sufficient for the entire family. Acceptable evidence includes a signed rental contract listing all residents, an ownership deed, or an official letter confirming the accommodation. The accommodation must be adequate for the number of people — a studio flat may not be deemed suitable for a family of four.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do family visa documents expire and need to be collected close to the application date?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes — most supporting documents have validity windows. Criminal record certificates must be under 3 months old at the time of application. Health insurance must cover a future period. Bank statements should be from the past 1–3 months. Apostilles and sworn translations should also be recent. Poor document timing is one of the most common reasons for family application delays.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can family members apply from a different country than the student?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Generally, each family member applies at the Spanish consulate with jurisdiction over their country of legal residence. If family members are in different countries, each applies at their respective local consulate. The student's approval is typically needed before or simultaneously with the dependant applications.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What happens to family dependant visas at renewal time?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Family dependant permits must be renewed in Spain at the same time as the student's permit renewal. The renewal requires updated financial evidence, continued health insurance, proof of the student's continued enrolment, and a clean criminal record for adults. If any dependant's documents have lapsed — particularly health insurance — this can block the entire family's renewal.</div>
+          </div>
       </div>
     </div>
   </section>
@@ -870,8 +902,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
         <p>We prepare, check, and coordinate every document for every family member. No gaps, no delays caused by missing apostilles or incorrect translation formats.</p>
         <a class="btn-white" href="https://dashboard.platinumlegalspain.com/student-visa">Start Your Application</a>
       </div>
-    </div>
-  </section>
+    </section>
 </main>
 
   <footer>

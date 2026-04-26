@@ -97,6 +97,36 @@
             "name": "Can I use a foreign currency bank account for my Spain student visa?",
             "acceptedAnswer": { "@type": "Answer", "text": "Yes. The consulate will convert the balance to euros using the current exchange rate. You should include a note indicating the account currency and approximate EUR equivalent, or attach a recent exchange rate printout. Accounts in major currencies (USD, GBP, AUD, CAD) are routinely accepted. Some consulates prefer you to include an official bank letter confirming the balance in your local currency." }
           }
+          {
+            "@type": "Question",
+            "name": "Can I use cryptocurrency holdings as financial evidence for the Spain student visa?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Spanish consulates require conventional financial evidence — bank account statements from a recognised financial institution. Cryptocurrency holdings, investment portfolios, and digital wallets are not accepted as primary financial evidence. If your wealth is primarily in crypto, you will need to convert funds to a traditional bank account and allow several months for statements to reflect stable balances." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to show funds for the full course or just a few months?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ideally, show enough funds to cover your entire planned stay at approximately €600 per month. If your course is two years, showing €14,400 in available funds is stronger evidence than a few months of expenses. If you cannot show the full amount, strong sponsor documentation with sufficient parental income can supplement your own bank statements." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I have multiple bank accounts — do I need statements from all of them?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You can combine evidence from multiple accounts. Provide statements from each account and clearly show the total available funds. If accounts are in different currencies, provide a conversion note. The total across all accounts should meet the required threshold." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do online bank statements (like Monzo or Revolut) count?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Digital bank statements from online-only banks are increasingly accepted, but some consulates prefer traditional bank statements with a physical branch address. If using an online bank statement, print it and ensure it clearly shows your full name, account number, all transactions, and bank branding. When in doubt, supplement with a letter from the bank confirming your account balance." }
+          },
+          {
+            "@type": "Question",
+            "name": "How should I present my bank statements — loose pages or bound?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Present bank statements as a complete, coherent document — all months together, pages in order. A simple clear plastic sleeve or binder is fine. Highlight the key figures such as closing balances and incoming transfers to make it easy for the consulate officer to verify the amounts. Do not separate statements into individual pages without clear labelling." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can my employer salary slips count as financial evidence alongside bank statements?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. If you are currently employed, payslips showing your regular income can strengthen your financial evidence and explain consistent deposits in your bank statements. Provide the most recent 3 months of payslips alongside your bank statements. An employment contract confirming your salary can also be included as supporting evidence." }
+          },
         ]
       },
       {
@@ -246,6 +276,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -557,7 +589,32 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
             </button>
             <div class="faq-a">Yes. Accounts in USD, GBP, AUD, CAD and other major currencies are fully accepted. Include a note or covering letter with your statements indicating the currency and an approximate EUR equivalent based on a recent exchange rate (attach the rate printout from the ECB or your bank). For less common currencies, include an official bank letter confirming the balance in both the local currency and euros.</div>
           </div>
-        </div>
+        
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I use cryptocurrency holdings as financial evidence for the Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">No. Spanish consulates require conventional financial evidence — bank account statements from a recognised financial institution. Cryptocurrency holdings, investment portfolios, and digital wallets are not accepted as primary financial evidence. If your wealth is primarily in crypto, you will need to convert funds to a traditional bank account and allow several months for statements to reflect stable balances.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do I need to show funds for the full course or just a few months?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Ideally, show enough funds to cover your entire planned stay at approximately €600 per month. If your course is two years, showing €14,400 in available funds is stronger evidence than a few months of expenses. If you cannot show the full amount, strong sponsor documentation with sufficient parental income can supplement your own bank statements.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What if I have multiple bank accounts — do I need statements from all of them?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">You can combine evidence from multiple accounts. Provide statements from each account and clearly show the total available funds. If accounts are in different currencies, provide a conversion note (you do not need an official exchange rate certificate — a printed exchange rate from a recognised source is sufficient). The total across all accounts should meet the required threshold.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do online bank statements (like Monzo or Revolut) count?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Digital bank statements from online-only banks are increasingly accepted, but some consulates prefer or require traditional bank statements with a physical branch address. If using an online bank statement, print it from your banking app or download it as a PDF and ensure it clearly shows your full name, account number, all transactions, and bank branding. When in doubt, supplement with a letter from the bank confirming your account balance.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How should I present my bank statements — loose pages or bound?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Present bank statements as a complete, coherent document — all months together, pages in order. A simple clear plastic sleeve or binder is fine. Highlight or tab the key figures (closing balances, incoming transfers) to make it easy for the consulate officer to verify the amounts. Do not separate statements into individual pages without clear labelling.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can my employer salary slips count as financial evidence alongside bank statements?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes. If you are currently employed, payslips showing your regular income can strengthen your financial evidence and explain consistent deposits in your bank statements. Provide the most recent 3 months of payslips alongside your bank statements. An employment contract or employer letter confirming your salary can also be included as supporting evidence.</div>
+          </div>
+          </div>
       </div>
     </section>
 
@@ -565,7 +622,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
       <div class="section-inner">
         <div class="cta-banner">
           <h2>Get Your Financial Documents Right the First Time</h2>
-          <p>Our immigration lawyers review your bank statements and financial package before submission — so you know exactly what the consulate will see, and that it meets the standard.</p>
+          <p>Our immigration specialists review your bank statements and financial package before submission — so you know exactly what the consulate will see, and that it meets the standard.</p>
           <a class="btn-white" href="https://dashboard.platinumlegalspain.com/student-visa">Start Your Application</a>
         </div>
       </div>

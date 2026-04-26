@@ -181,6 +181,49 @@
               "text": "Your NIE (Número de Identidad de Extranjero) is already assigned to you — it appears on your student visa sticker in your passport. You do not need to 'get' a NIE separately. What you need is the TIE card, which is the physical card that has your NIE printed on it. Once you have your TIE card, your NIE is readily available for any purpose (bank, university, tax office)."
             }
           }
+                  ,{
+            "@type": "Question",
+            "name": "Do I need a bank account to get my TIE card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not directly — a Spanish bank account is not a required document for the TIE card application. However, you do need to pay the Tasa 790-012 fee (approximately €16) to a Spanish bank before your appointment, which requires access to a Spanish bank. Most students pay this at a bank counter or online using a temporary debit card or an international account. Some banks (BBVA, N26) will open accounts before the TIE card is issued."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Can I work in Spain while on a student visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, with limitations. Spain student visa holders are permitted to work up to 30 hours per week (as of 2024 regulation changes). You must not allow work to compromise your studies. Your employer will need your NIE/TIE details to register you for Spanish social security. Check the current rules with an immigration specialist, as working rights can affect your future visa renewals."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "When can I register with a Spanish health centre?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "After you have done your empadronamiento. The empadronamiento certificate is usually required when registering at the local centro de salud. Note that student visa holders are generally required to hold private health insurance and may not be entitled to full public healthcare — but some regions (notably Catalonia) extend public healthcare to all registered residents. Children under 18 are universally entitled regardless of immigration status."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "How do I open a Spanish bank account as a student?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To open a standard Spanish bank account you typically need your NIE (from your visa sticker), passport, empadronamiento certificate, and proof of student status. Common banks for students include Banco Sabadell, BBVA, and Santander. For a simpler process without visiting a branch, N26 and Wise both operate in Spain and accept applications with less documentation."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "What is the difference between the NIE and the TIE card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The NIE (Número de Identificación de Extranjero) is the unique number — it appears on your visa sticker. The TIE (Tarjeta de Identidad de Extranjero) is the physical plastic card that you apply for after arriving in Spain, which carries your NIE plus your photo and biometric data. You use the NIE number for most transactions; the TIE card is the physical proof of your legal residency status."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Do I need to tell my Spanish institution anything after I arrive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Most Spanish universities and language schools require you to confirm your arrival and complete in-person registration or matriculation (matrícula). You will typically need your passport, your visa, and potentially proof of empadronamiento. Completing formal enrolment on time is important — it ensures your attendance is correctly recorded and that you have a valid enrolment letter for your TIE card application."
+            }
+          }
         ]
       }
     ]
@@ -221,6 +264,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -562,7 +607,32 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           </button>
           <div class="faq-a">If you miss the 30-day deadline, you can still submit your TIE application — it will still be accepted. The practical consequence is that the delay creates a technical non-compliance with immigration regulations. While this does not typically result in immediate sanctions for a first-time, short delay, it can be raised at the time of your visa renewal and could complicate future immigration proceedings. If Cita Previa slots in your area are scarce and you cannot get an appointment within 30 days, document your attempts to book (screenshots of the booking system showing no availability) as this can serve as evidence of good faith.</div>
         </div>
-      </div>
+      
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do I need a bank account to get my TIE card?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Not directly — a Spanish bank account is not a required document for the TIE card application. However, you do need to pay the Tasa 790-012 fee (approximately €16) to a Spanish bank before your appointment, which requires access to a Spanish bank. Most students pay this at a bank counter or online using a temporary debit card or an international account. Some banks (BBVA, N26) will open accounts before the TIE card is issued.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I work in Spain while on a student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes, with limitations. Spain student visa holders are permitted to work up to 30 hours per week (as of 2024 regulation changes). You must not allow work to compromise your studies. Your employer will need your NIE/TIE details to register you for Spanish social security. Check the current rules with an immigration specialist, as working rights can affect your future visa renewals.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>When can I register with a Spanish health centre?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">After you have done your empadronamiento. The empadronamiento certificate is usually required when registering at the local centro de salud. Note that student visa holders are generally required to hold private health insurance and may not be entitled to full public healthcare — but some regions (notably Catalonia) extend public healthcare to all registered residents. Children under 18 are universally entitled regardless of immigration status.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How do I open a Spanish bank account as a student?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">To open a standard Spanish bank account you typically need your NIE (from your visa sticker), passport, empadronamiento certificate, and proof of student status. Common banks for students include Banco Sabadell, BBVA, and Santander. For a simpler process without visiting a branch, N26 and Wise both operate in Spain and accept applications with less documentation.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What is the difference between the NIE and the TIE card?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">The NIE (Número de Identificación de Extranjero) is the unique number — it appears on your visa sticker. The TIE (Tarjeta de Identidad de Extranjero) is the physical plastic card that you apply for after arriving in Spain, which carries your NIE plus your photo and biometric data. You use the NIE number for most transactions; the TIE card is the physical proof of your legal residency status.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do I need to tell my Spanish institution anything after I arrive?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes. Most Spanish universities and language schools require you to confirm your arrival and complete in-person registration or matriculation (matrícula). You will typically need your passport, your visa, and potentially proof of empadronamiento. Completing formal enrolment on time is important — it ensures your attendance is correctly recorded and that you have a valid enrolment letter for your TIE card application.</div>
+          </div>
+        </div>
     </div>
   </section>
 

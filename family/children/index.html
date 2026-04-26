@@ -97,7 +97,7 @@
     .faq-item.open .faq-q svg{transform:rotate(45deg);}
     .faq-a{display:none;padding:0 1.4rem 1.2rem;font-size:.93rem;color:var(--grey-600);line-height:1.7;}
     .faq-item.open .faq-a{display:block;}
-    .cta-banner{background:var(--red);border-radius:var(--r-lg);padding:3rem 2.5rem;text-align:center;}
+    .cta-banner { background: transparent; padding: 0; text-align: center; }
     .cta-banner h2{font-family:var(--ff-display);font-size:1.8rem;font-weight:700;color:var(--white);margin-bottom:.75rem;}
     .cta-banner p{color:rgba(255,255,255,.85);margin-bottom:1.8rem;font-size:1.05rem;}
     .btn-white{background:var(--white);color:var(--red);padding:.85rem 2.2rem;border-radius:var(--r-pill);font-weight:700;font-size:1rem;display:inline-block;}
@@ -175,7 +175,13 @@
               "@type": "Answer",
               "text": "Yes, for the visa application. Each child dependant must have their own private health insurance policy valid in Spain with a minimum €30,000 coverage and no co-payments. However, children under 18 who are registered in Spain (empadronados) are entitled to access the Spanish public health system regardless of their insurance status, as Spain guarantees universal healthcare to all minors. The private insurance is a visa application requirement, not a practical barrier to healthcare."
             }
-          }
+          },
+          {"@type":"Question","name":"What school will my child attend in Spain?","acceptedAnswer":{"@type":"Answer","text":"Children in Spain are entitled to a place in the state school system regardless of immigration status. Once you register at the local town hall (empadronamiento), your child can enrol in the nearest state school. Private and international schools are also available in most Spanish cities for families who prefer an international curriculum."}},
+          {"@type":"Question","name":"Does my child need to speak Spanish to attend school in Spain?","acceptedAnswer":{"@type":"Answer","text":"No — Spanish state schools are required to accommodate children who do not speak Spanish by providing integration support. Most schools have programmes for newly arrived students that provide Spanish language support alongside the regular curriculum. Children typically achieve functional Spanish within 6–12 months."}},
+          {"@type":"Question","name":"What happens to my child's visa status when they turn 18?","acceptedAnswer":{"@type":"Answer","text":"When a child dependant turns 18, they are no longer eligible to renew as a dependent minor. They should either apply for their own independent student visa if enrolled in a qualifying course, apply for a work permit if they have a job offer, or leave Spain. Planning this transition 6 months before the 18th birthday gives the best chance of maintaining legal status without a gap."}},
+          {"@type":"Question","name":"Do I need an apostille on my child's birth certificate?","acceptedAnswer":{"@type":"Answer","text":"Yes — birth certificates submitted for visa purposes must be apostilled under the Hague Convention and accompanied by a sworn Spanish translation. The original official birth certificate issued by the civil registry authority is required — not a hospital birth certificate or uncertified extract."}},
+          {"@type":"Question","name":"Can I bring a child I am the legal guardian of but have not formally adopted?","acceptedAnswer":{"@type":"Answer","text":"Spain recognises biological children, legally adopted children, and in some cases children placed under formal legal guardianship (tutela legal) with supporting court orders. Informal or de facto care arrangements are much harder to document and may not be accepted. An immigration specialist should be consulted for non-standard family situations."}},
+          {"@type":"Question","name":"Can my child work in Spain on a dependant visa?","acceptedAnswer":{"@type":"Answer","text":"Children under 16 cannot legally work in Spain. Young people aged 16–18 can work with parental consent in limited circumstances. Once a dependant child turns 18, they would need their own independent work authorisation to work legally — dependant visa status alone does not grant work rights at any age."}}
         ]
       }
     ]
@@ -216,6 +222,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -654,7 +662,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           <div class="step-num">3</div>
           <div class="step-body">
             <h3>Act well in advance</h3>
-            <p>Applications for transitioning to a new status must be submitted before the existing authorisation expires. If the child turns 18 and their dependant authorisation was due for renewal, they are effectively in a transition gap. Spanish immigration lawyers can manage this transition seamlessly — but only if planned early enough. Do not leave this until the birthday approaches.</p>
+            <p>Applications for transitioning to a new status must be submitted before the existing authorisation expires. If the child turns 18 and their dependant authorisation was due for renewal, they are effectively in a transition gap. Spanish immigration specialists can manage this transition seamlessly — but only if planned early enough. Do not leave this until the birthday approaches.</p>
           </div>
         </div>
       </div>
@@ -709,6 +717,30 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           </button>
           <div class="faq-a">Only if you have a formal legal relationship with the child — specifically, if you are a legal adoptive parent (with an official adoption decree) or if a court has granted you formal legal guardianship (tutela). Informal arrangements, even long-standing ones, are not recognised by the Spanish immigration system for family reunification purposes. Foster care arrangements from your home country may be recognised if accompanied by official documentation from the relevant authority, but this is assessed case by case. Contact us to discuss your specific situation.</div>
         </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Does my child need to speak Spanish to attend school in Spain?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">No — Spanish state schools are required to accommodate children who do not speak Spanish by providing integration support. Most schools have programmes for newly arrived students (alumnos de incorporación tardía) that offer Spanish language support alongside the regular curriculum. Children typically achieve functional Spanish within 6–12 months of school attendance.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do I need an apostille on my child's birth certificate?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes — birth certificates submitted for visa purposes must be apostilled under the Hague Convention and accompanied by a sworn Spanish translation. The original official birth certificate issued by the civil registry authority is required — not a hospital birth certificate or an uncertified extract.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can my child work in Spain on a dependant visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Children under 16 cannot legally work in Spain. Young people aged 16–18 can work with parental consent in limited circumstances under Spanish labour law. Once a dependant child turns 18, they would need their own independent work authorisation to work legally — dependant visa status alone does not grant work rights at any age.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Is my child entitled to Spanish public healthcare while on a dependant visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes — Spain guarantees universal healthcare access to all children under 18 who are empadronados (registered at the local town hall), regardless of their immigration status or insurance. Once you register your family at the local municipality, your child can access the Spanish public health system via a local health centre (centro de salud). The private insurance required for the visa application is a documentation requirement, not an indication that your child is barred from the public system.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How long does the child dependant visa typically take to process?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">When submitted alongside the student visa application, child dependant applications are generally processed on the same timeline — typically 4–12 weeks depending on the consulate. Submitting all applications (student and all family members) at the same appointment with complete documentation significantly reduces the risk of staggered approvals or unnecessary delays.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Does my child's school need to be accredited for the dependant visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">No — the child's school in Spain does not need to be accredited for the purposes of the dependant visa. The visa requirement is that the child has appropriate accommodation and financial support in Spain, not that they are enrolled in any particular institution. School enrolment happens after arrival in Spain once the empadronamiento is done. The accreditation requirement applies to the main student applicant's course, not to the children's schooling.</div>
+          </div>
       </div>
     </div>
   </section>
@@ -718,7 +750,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
     <div class="section-inner">
       <div class="cta-banner">
         <h2>Moving to Spain as a Family? Let Us Handle It.</h2>
-        <p>Our lawyers coordinate student and family dependant applications together — ensuring the right documents, the right financial evidence, and the right timelines for every family member.</p>
+        <p>Our specialists coordinate student and family dependant applications together — ensuring the right documents, the right financial evidence, and the right timelines for every family member.</p>
         <a class="btn-white" href="https://dashboard.platinumlegalspain.com/student-visa">Start Your Family Application</a>
       </div>
     </div>

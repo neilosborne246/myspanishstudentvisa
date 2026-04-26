@@ -51,7 +51,7 @@
       "name": "My Spanish Student Visa",
       "url": "https://myspanishstudentvisa.com",
       "logo": "https://myspanishstudentvisa.com/assets/logo.png",
-      "description": "Qualified Spanish immigration lawyers helping international students get their Spain student visa. Backed by Platinum Legal Spain.",
+      "description": "Qualified Spanish immigration specialists helping international students get their Spain student visa. Backed by Platinum Legal Spain.",
       "parentOrganization": {
         "@type": "Organization",
         "name": "Platinum Legal Spain"
@@ -139,7 +139,50 @@
             "text": "The EX-00 form (Solicitud de autorización de estancia por estudios, movilidad internacional de alumnos, prácticas no laborales e investigación) is the official application form for the Spain student visa. Download it from extranjeros.inclusion.gob.es. It must be completed entirely in Spanish — submitting the form in English is one of the most common grounds for rejection."
           }
         }
-      ]
+                ,{
+            "@type": "Question",
+            "name": "What documents are on the Spain student visa checklist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The standard checklist covers: valid passport (6+ months validity); completed visa application form; Letter of Acceptance from your Spanish institution; proof of financial means (bank statements / sponsorship letter); private health insurance certificate; proof of accommodation in Spain; criminal background check (apostilled); medical certificate; passport photographs; and payment of the visa fee. Additional documents may be required by specific consulates — always check your consulate's own list."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Do all Spain student visa documents need to be apostilled?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not all, but many. Documents issued by foreign government authorities — such as criminal background checks and birth certificates — typically require an Apostille stamp. Academic documents (transcripts, diplomas) often also need apostilling. Documents prepared for the visa application itself (bank statements, insurance certificates) do not require an apostille. Check the specific requirements of your consulate."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "How early should I start gathering documents for a Spain student visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start at least 3–4 months before your intended consulate appointment date. Some documents take significant time to obtain — criminal background checks can take 2–6 weeks, apostilles may take 1–4 weeks, and some financial documents require advance preparation. The Letter of Acceptance from your institution may also take several weeks to arrive."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Do my supporting documents need to be translated into Spanish?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on your consulate. Some consulates, particularly in English-speaking countries, accept English-language documents. Others require official certified translations (traducción jurada) of documents not in Spanish. Check your specific consulate's requirements. Documents in languages other than English or Spanish almost always require certified Spanish translation."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Can I submit my checklist documents digitally or do they need to be physical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most Spanish consulates require physical (paper) documents submitted in person at your appointment. Some consulates now accept digital document packs submitted in advance for review, followed by physical originals at the appointment. Check your specific consulate's current submission process on their website, as practices have evolved since the COVID-19 period."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "What should I do if I cannot get a document in time for my appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Contact your consulate to explain the situation. Some consulates allow you to submit a pending document list and follow up with missing items after the appointment. However, there is no guarantee — your appointment may be rescheduled or your application may be delayed. An immigration specialist can advise on how to handle specific missing documents and whether any alternatives are accepted."
+            }
+          }
+        ]
     }
   ]
   </script>
@@ -206,6 +249,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -647,7 +692,32 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
         </button>
         <div class="faq-a">The EX-00 form — full title: Solicitud de autorización de estancia por estudios, movilidad internacional de alumnos, prácticas no laborales e investigación — is the official Spanish government application form for the student visa. Download it from the official extranjeros.inclusion.gob.es portal. It is available in both Spanish and English versions on the portal, but it must be completed in Spanish. This is a firm consulate requirement, not a suggestion — submitting the English-language version is one of the most frequently cited reasons for forms being rejected at the desk.</div>
       </div>
-    </div>
+    
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What documents are on the Spain student visa checklist?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">The standard checklist covers: valid passport (6+ months validity); completed visa application form; Letter of Acceptance from your Spanish institution; proof of financial means (bank statements / sponsorship letter); private health insurance certificate; proof of accommodation in Spain; criminal background check (apostilled); medical certificate; passport photographs; and payment of the visa fee. Additional documents may be required by specific consulates — always check your consulate's own list.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do all Spain student visa documents need to be apostilled?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Not all, but many. Documents issued by foreign government authorities — such as criminal background checks and birth certificates — typically require an Apostille stamp. Academic documents (transcripts, diplomas) often also need apostilling. Documents prepared for the visa application itself (bank statements, insurance certificates) do not require an apostille. Check the specific requirements of your consulate.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How early should I start gathering documents for a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Start at least 3–4 months before your intended consulate appointment date. Some documents take significant time to obtain — criminal background checks can take 2–6 weeks, apostilles may take 1–4 weeks, and some financial documents require advance preparation. The Letter of Acceptance from your institution may also take several weeks to arrive.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do my supporting documents need to be translated into Spanish?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">It depends on your consulate. Some consulates, particularly in English-speaking countries, accept English-language documents. Others require official certified translations (traducción jurada) of documents not in Spanish. Check your specific consulate's requirements. Documents in languages other than English or Spanish almost always require certified Spanish translation.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I submit my checklist documents digitally or do they need to be physical?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Most Spanish consulates require physical (paper) documents submitted in person at your appointment. Some consulates now accept digital document packs submitted in advance for review, followed by physical originals at the appointment. Check your specific consulate's current submission process on their website, as practices have evolved since the COVID-19 period.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What should I do if I cannot get a document in time for my appointment?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Contact your consulate to explain the situation. Some consulates allow you to submit a pending document list and follow up with missing items after the appointment. However, there is no guarantee — your appointment may be rescheduled or your application may be delayed. An immigration specialist can advise on how to handle specific missing documents and whether any alternatives are accepted.</div>
+          </div>
+        </div>
   </div>
 </section>
 

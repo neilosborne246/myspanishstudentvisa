@@ -97,6 +97,36 @@
             "name": "Can I use my NHS or home country public health coverage for the Spain student visa?",
             "acceptedAnswer": { "@type": "Answer", "text": "No. Public health entitlements from your home country — including NHS coverage or equivalent — are not accepted for Spain student visa purposes. The visa requirement specifies private health insurance from an EU-authorised insurer. EHIC/GHIC cards (European or Global Health Insurance Cards) are also not accepted as they are designed for temporary stays, not for long-term study residency." }
           }
+          {
+            "@type": "Question",
+            "name": "How do I prove my health insurance meets the Spain student visa requirements?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You need an official certificate from your insurer that explicitly states: coverage is valid in Spain, the coverage amount is at least €30,000, there are no co-payment clauses, and the policy dates cover your full stay. The certificate should be on official insurer letterhead. If in English, some consulates accept this; others require a sworn Spanish translation — confirm with your consulate." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my employer's health insurance from my home country?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Only if the policy explicitly covers Spain, meets the €30,000 minimum, has no co-payment, and is valid for your full stay. Most employer health plans are designed for home-country use and do not meet these requirements. If your employer's plan does not qualify, you must purchase a separate student visa health insurance policy." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I need medical treatment in Spain — how do I use my insurance?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Your insurer will provide a list of approved clinics and hospitals or a system for direct billing. For emergencies, go to the nearest hospital urgencias and present your insurance details. Keep your insurance certificate and your insurer's emergency number accessible at all times. For routine care, use the approved providers listed by your insurer." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there student-specific health insurance designed for Spain student visa holders?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Several insurers offer policies specifically designed for Spain student visa applicants, including Adeslas, Asisa, Cigna, and Sanitas. These policies are designed to meet all Spanish consulate requirements and are typically priced at €50–150 per month depending on age and coverage level. Buying a policy designed for this purpose is simpler than adapting a generic travel insurance policy." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I need to extend my health insurance because my visa is extended?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Contact your insurer before your current policy expires to extend it. Most Spain student visa health insurance providers allow simple renewals. Provide your updated TIE card details when extending. Do not let your insurance lapse — being in Spain without valid health insurance is a violation of your visa conditions and can affect future applications." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use a European Health Insurance Card or similar for the Spain student visa?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. EHIC, UK GHIC, and similar state-issued health cards are not accepted as health insurance for the Spain student visa. These cards provide access to state healthcare under reciprocal agreements but do not meet the private insurance requirements stipulated by the Spanish consulate. You must have a private health insurance policy meeting all the stated requirements." }
+          },
         ]
       },
       {
@@ -247,6 +277,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -543,7 +575,32 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
             </button>
             <div class="faq-a">No — NHS coverage, Medicare, EHIC, GHIC, and equivalent home country public health entitlements are not accepted. The requirement is specifically for private health insurance from an EU-regulated insurer with no copay and a minimum €30,000 limit. Public health entitlements and reciprocal health agreements do not meet this standard.</div>
           </div>
-        </div>
+        
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How do I prove my health insurance meets the Spain student visa requirements?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">You need an official certificate from your insurer (not just a policy schedule or receipt) that explicitly states: the coverage is valid in Spain, the coverage amount is at least €30,000, there are no co-payment clauses, and the policy dates cover your full stay. The certificate should be on official insurer letterhead. If the certificate is in English, some consulates accept this; others require a sworn Spanish translation — confirm with your consulate.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I use my employer's health insurance from my home country?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Only if the policy explicitly covers Spain, meets the €30,000 minimum, has no co-payment, and is valid for your full stay. Most employer health plans are designed for home-country use and do not meet these requirements. Check the policy documentation carefully. If your employer's plan does not qualify, you must purchase a separate student visa health insurance policy.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What happens if I need medical treatment in Spain — how do I use my insurance?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Your insurer will provide a list of approved clinics and hospitals (médicos concertados) or a system for direct billing. For emergencies, go to the nearest hospital urgencias (A&E) and present your insurance details. Keep your insurance certificate and your insurer's emergency number accessible at all times. For routine care, use the approved providers listed by your insurer to avoid out-of-pocket payments.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Is there student-specific health insurance designed for Spain student visa holders?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes. Several insurers offer policies specifically designed for Spain student visa applicants, including Adeslas, Asisa, Cigna, Sanitas, and various international student insurers. These policies are designed to meet all Spanish consulate requirements and are typically priced at €50–150 per month depending on age and coverage level. Buying a policy designed for this purpose is simpler than adapting a generic travel insurance policy.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What if I need to extend my health insurance because my visa is extended?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Contact your insurer before your current policy expires to extend it. Most Spain student visa health insurance providers allow simple renewals or extensions. Provide your updated TIE card details when extending. Do not let your insurance lapse — being in Spain without valid health insurance is a violation of your visa conditions and can affect any future applications.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I use a European Health Insurance Card (EHIC) or similar for the Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">No. EHIC, UK GHIC, and similar state-issued health cards are not accepted as health insurance for the Spain student visa. These cards provide access to state healthcare under reciprocal agreements but do not meet the private insurance requirements stipulated by the Spanish consulate. You must have a private health insurance policy meeting all the stated requirements.</div>
+          </div>
+          </div>
       </div>
     </section>
 

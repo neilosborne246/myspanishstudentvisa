@@ -87,10 +87,60 @@
           "name": "My bank balance dipped below the threshold in one month — will this affect my Spain student visa application?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Potentially. Consulates look for consistent average balances over the statement period, not just a point-in-time snapshot. A single dip may be acceptable, especially if clearly explained; but consistent shortfalls across multiple months are a red flag. A qualified immigration lawyer can advise on how best to present fluctuating finances."
+            "text": "Potentially. Consulates look for consistent average balances over the statement period, not just a point-in-time snapshot. A single dip may be acceptable, especially if clearly explained; but consistent shortfalls across multiple months are a red flag. A qualified immigration specialist can advise on how best to present fluctuating finances."
           }
         }
-      ]
+                ,{
+            "@type": "Question",
+            "name": "How much money do I need to show for a Spain student visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The financial requirement is calculated as a percentage of the Spanish monthly minimum wage (IPREM). The standard requirement is approximately 100% of IPREM per month of stay for your own subsistence, plus additional amounts for accommodation and other costs. For a 9-month academic year this typically equates to approximately €6,000–€7,500. Use the calculator above for a personalised estimate based on your specific duration and province."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Does the financial requirement vary by province in Spain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The base national calculation is the same, but some consulates apply a regional cost-of-living adjustment. Madrid and Barcelona are typically treated as higher-cost cities and consulates serving these regions sometimes apply a higher financial threshold. The calculator accounts for this."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Can I use a bank loan or credit facility to meet the financial requirement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Generally no. Spanish consulates expect to see accessible liquid funds — cash savings or equivalent — not credit facilities or loans. Bank statements showing the required balance over a period of 3–6 months are the standard evidence. Borrowed funds (recently deposited large amounts) are sometimes flagged by consulates as not representing genuine financial means."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Whose funds count toward the financial requirement — only mine or also my sponsor's?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both can count. If you have a sponsor, their bank statements and income evidence are submitted alongside or instead of your own funds. The key is demonstrating that sufficient funds are accessible and committed to supporting your stay. The sponsor's letter must explicitly commit to covering your expenses."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Do I need to keep the money in a Spanish bank account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The funds can be in any bank account, anywhere in the world, as long as the statements are clear and translatable. Some consulates prefer to see funds in your home country rather than recently transferred to Spain. You do not need to open a Spanish bank account before applying for your visa."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "What happens if my financial situation changes after I get my visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your visa is issued based on the documentation you provided at the time of application. If your financial situation deteriorates significantly during your stay and you cannot demonstrate sufficient funds at visa renewal, your renewal may be refused. Maintain your financial evidence throughout your studies and ensure your bank statements reflect the required levels at renewal time."
+            }
+          }          ,{
+            "@type": "Question",
+            "name": "Can scholarship funds count toward the financial requirement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. If you hold a confirmed scholarship that covers your living expenses and/or tuition, provide the official scholarship award letter as evidence. Consulates will typically accept scholarship funds from recognised institutions (government, EU programmes, or established foundations) as meeting or contributing to the financial requirement."
+            }
+          }
+        ]
     }
   ]
   </script>
@@ -177,6 +227,8 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
   .nav-logo img,.nav-logo-img{height:72px!important;}
   .footer-logo-img,.footer-logo img{height:72px!important;}
   body>nav{padding:1rem 1.5rem!important;}
+  .mobile-bar{display:flex!important;width:100%!important;padding:0.75rem 1rem!important;}
+  .mobile-bar a{flex:1!important;min-width:0!important;text-align:center!important;}
   .footer-pill{white-space:normal!important;}
   .footer-visa-pills{gap:0.4rem!important;}
   .footer-grid{grid-template-columns:1fr!important;}
@@ -426,7 +478,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
       <div class="explainer-full">
         <h3>What the Consulate Actually Checks</h3>
         <p>Consulate officers reviewing financial evidence are not simply looking at a single bank balance on a particular day. They assess the <em>consistency</em> of your financial situation over time. A large deposit made shortly before your application — particularly one that stands out against your normal account activity — will attract scrutiny. Consulates are experienced in identifying "parked" funds that do not reflect genuine financial standing.</p>
-        <p>What they want to see is that the money has been in your account (or a sponsor's account) for a reasonable period — typically at least three months, ideally six — and that the balance has remained consistently at or above the required level. The narrative of your finances matters: regular income, stable balances, and no sudden unexplained movements will always present better than a large one-off transfer. If your financial situation is complicated — multiple currencies, recent large transactions, fluctuating balances — a specialist immigration lawyer can advise on how to frame your evidence most effectively.</p>
+        <p>What they want to see is that the money has been in your account (or a sponsor's account) for a reasonable period — typically at least three months, ideally six — and that the balance has remained consistently at or above the required level. The narrative of your finances matters: regular income, stable balances, and no sudden unexplained movements will always present better than a large one-off transfer. If your financial situation is complicated — multiple currencies, recent large transactions, fluctuating balances — a specialist immigration specialist can advise on how to frame your evidence most effectively.</p>
       </div>
       <div class="info-box">
         <h4>Important: Six Months of Statements is the Safe Standard</h4>
@@ -475,9 +527,38 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
             <span>My bank balance dipped below the threshold in one month — is that a problem?</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="10" y1="4" x2="10" y2="16"/><line x1="4" y1="10" x2="16" y2="10"/></svg>
           </button>
-          <div class="faq-a">Potentially, but context matters. Consulates look for consistent average balances over the statement period — they are not performing a strict test on every single day's closing balance. A single dip that is clearly explained (for example, an annual insurance payment or rent in advance) is generally not fatal to an otherwise strong application. Consistent shortfalls across multiple months are a more serious problem. If your statement history includes concerning fluctuations, one of our immigration lawyers can advise on how to present your finances and whether supplementary evidence — such as additional accounts or a parental sponsor — would strengthen your case.</div>
+          <div class="faq-a">Potentially, but context matters. Consulates look for consistent average balances over the statement period — they are not performing a strict test on every single day's closing balance. A single dip that is clearly explained (for example, an annual insurance payment or rent in advance) is generally not fatal to an otherwise strong application. Consistent shortfalls across multiple months are a more serious problem. If your statement history includes concerning fluctuations, one of our immigration specialists can advise on how to present your finances and whether supplementary evidence — such as additional accounts or a parental sponsor — would strengthen your case.</div>
         </div>
-      </div>
+      
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How much money do I need to show for a Spain student visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">The financial requirement is calculated as a percentage of the Spanish monthly minimum wage (IPREM). The standard requirement is approximately 100% of IPREM per month of stay for your own subsistence, plus additional amounts for accommodation and other costs. For a 9-month academic year this typically equates to approximately €6,000–€7,500. Use the calculator above for a personalised estimate based on your specific duration and province.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Does the financial requirement vary by province in Spain?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">The base national calculation is the same, but some consulates apply a regional cost-of-living adjustment. Madrid and Barcelona are typically treated as higher-cost cities and consulates serving these regions sometimes apply a higher financial threshold. The calculator accounts for this.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I use a bank loan or credit facility to meet the financial requirement?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Generally no. Spanish consulates expect to see accessible liquid funds — cash savings or equivalent — not credit facilities or loans. Bank statements showing the required balance over a period of 3–6 months are the standard evidence. Borrowed funds (recently deposited large amounts) are sometimes flagged by consulates as not representing genuine financial means.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Whose funds count toward the financial requirement — only mine or also my sponsor's?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Both can count. If you have a sponsor, their bank statements and income evidence are submitted alongside or instead of your own funds. The key is demonstrating that sufficient funds are accessible and committed to supporting your stay. The sponsor's letter must explicitly commit to covering your expenses.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do I need to keep the money in a Spanish bank account?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">No. The funds can be in any bank account, anywhere in the world, as long as the statements are clear and translatable. Some consulates prefer to see funds in your home country rather than recently transferred to Spain. You do not need to open a Spanish bank account before applying for your visa.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What happens if my financial situation changes after I get my visa?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Your visa is issued based on the documentation you provided at the time of application. If your financial situation deteriorates significantly during your stay and you cannot demonstrate sufficient funds at visa renewal, your renewal may be refused. Maintain your financial evidence throughout your studies and ensure your bank statements reflect the required levels at renewal time.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can scholarship funds count toward the financial requirement?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            <div class="faq-a">Yes. If you hold a confirmed scholarship that covers your living expenses and/or tuition, provide the official scholarship award letter as evidence. Consulates will typically accept scholarship funds from recognised institutions (government, EU programmes, or established foundations) as meeting or contributing to the financial requirement.</div>
+          </div>
+        </div>
     </div>
   </section>
 
@@ -486,7 +567,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
     <div class="section-inner">
       <div class="cta-banner">
         <h2>Not Sure Your Finances Will Pass?</h2>
-        <p>Our lawyers review your financial situation and advise on the best way to present your evidence. No guesswork — just clear, qualified guidance.</p>
+        <p>Our specialists review your financial situation and advise on the best way to present your evidence. No guesswork — just clear, qualified guidance.</p>
         <a href="https://dashboard.platinumlegalspain.com/student-visa" class="btn-white">Start Your Application</a>
       </div>
     </div>
