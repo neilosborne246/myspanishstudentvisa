@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Utility pages — no indexing value
+Disallow: /thank-you/
+Disallow: /404/
+Disallow: /sitemap/
+
+Sitemap: https://myspanishstudentvisa.com/sitemap.xml
