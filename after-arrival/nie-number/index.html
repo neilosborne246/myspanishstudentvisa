@@ -209,12 +209,24 @@ body>nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-item
 <style id="nav-fix-2">
 .nav-logo img,.nav-logo-img{height:108px!important;width:auto!important;}
 .footer-logo-img,.footer-logo img{height:108px!important;width:auto!important;}
-@media(max-width:900px){.nav-logo img,.nav-logo-img{height:72px!important;}.footer-logo-img,.footer-logo img{height:72px!important;}}
+@media(max-width:900px){
+  html,body{overflow-x:hidden!important;max-width:100%!important;}
+  .nav-logo img,.nav-logo-img{height:72px!important;}
+  .footer-logo-img,.footer-logo img{height:72px!important;}
+  body>nav{padding:1rem 1.5rem!important;}
+  .footer-pill{white-space:normal!important;}
+  .footer-visa-pills{gap:0.4rem!important;}
+  .footer-grid{grid-template-columns:1fr!important;}
+  .cost-summary{grid-template-columns:1fr!important;}
+  .payment-steps{grid-template-columns:1fr!important;}
+  .glossary-grid{grid-template-columns:1fr!important;}
+  .compare-grid{grid-template-columns:1fr!important;}
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+}
 body{padding-top:145px!important;}
 body>nav{min-height:130px;padding:1.25rem 4rem!important;}
 .nav-links,.nav-links.nav-desktop{gap:2.5rem!important;}
 .nav-links a,.nav-links.nav-desktop a{font-size:0.85rem!important;letter-spacing:0.06em!important;}
-@media(max-width:900px){body>nav{padding:1rem 1.5rem!important;}}
 </style>
 
 <style>
