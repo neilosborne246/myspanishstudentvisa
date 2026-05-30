@@ -848,6 +848,33 @@
     .link-card p { font-size: 0.85rem; color: var(--text-muted-light); line-height: 1.6; }
     .link-arrow { margin-top: 1.25rem; font-size: 0.85rem; color: var(--yellow); font-weight: 500; }
 
+    /* EXPLORE GUIDES */
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .guide-group {
+      border: 1px solid var(--border-dark);
+      border-radius: var(--r-lg);
+      padding: 1.75rem;
+      background: var(--navy-mid);
+    }
+    .guide-group h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; }
+    .guide-group h3 a { color: var(--white); text-decoration: none; }
+    .guide-group h3 a:hover { color: var(--yellow); }
+    .guide-list { list-style: none; }
+    .guide-list li { margin-bottom: 0.55rem; }
+    .guide-list a {
+      font-size: 0.85rem;
+      color: var(--text-muted-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .guide-list a:hover { color: var(--yellow); }
+    .guide-list .guide-all a { color: var(--yellow); font-weight: 500; }
+
     /* FOOTER */
     footer {
       background: var(--navy);
@@ -1057,6 +1084,7 @@
       .payment-steps { grid-template-columns: 1fr; }
       .work-grid { grid-template-columns: 1fr; }
       .links-grid { grid-template-columns: 1fr; }
+      .guide-grid { grid-template-columns: 1fr; }
       .cta-banner { padding: 3.5rem 1.5rem; }
       .cta-inner { flex-direction: column; align-items: flex-start; }
       footer { padding: 3rem 1.5rem 1.5rem; }
@@ -1460,6 +1488,65 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           <summary>Can I apply for the student visa while already in Spain?</summary>
           <p>No &#x2014; the student visa (visado de estudios) must be applied for at a Spanish consulate in your home country. You cannot switch to a student visa from within Spain on a tourist visa. If you are already in Spain and enrolled, speak to us about your options.</p>
         </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE GUIDES (dark) -->
+  <section class="dark-section" aria-labelledby="guides-heading">
+    <div class="section-inner">
+      <p class="section-label">Find Your Guide</p>
+      <h2 class="section-title" id="guides-heading">Spain student visa guides by city, consulate, course &amp; visa type</h2>
+      <div class="guide-grid">
+
+        <div class="guide-group">
+          <h3><a href="/by-city/">Study by City</a></h3>
+          <ul class="guide-list">
+            <li><a href="/by-city/study-in-madrid/">Study in Madrid</a></li>
+            <li><a href="/by-city/study-in-barcelona/">Study in Barcelona</a></li>
+            <li><a href="/by-city/study-in-valencia/">Study in Valencia</a></li>
+            <li><a href="/by-city/study-in-seville/">Study in Seville</a></li>
+            <li><a href="/by-city/study-in-granada/">Study in Granada</a></li>
+            <li class="guide-all"><a href="/by-city/">All cities &#x2192;</a></li>
+          </ul>
+        </div>
+
+        <div class="guide-group">
+          <h3><a href="/by-consulate/">By Consulate</a></h3>
+          <ul class="guide-list">
+            <li><a href="/by-consulate/spanish-consulate-london/">Spanish Consulate London</a></li>
+            <li><a href="/by-consulate/spanish-consulate-new-york/">Spanish Consulate New York</a></li>
+            <li><a href="/by-consulate/spanish-consulate-los-angeles/">Spanish Consulate Los Angeles</a></li>
+            <li><a href="/by-consulate/spanish-consulate-edinburgh/">Spanish Consulate Edinburgh</a></li>
+            <li><a href="/by-consulate/spanish-consulate-dublin/">Spanish Consulate Dublin</a></li>
+            <li class="guide-all"><a href="/by-consulate/">All consulates &#x2192;</a></li>
+          </ul>
+        </div>
+
+        <div class="guide-group">
+          <h3><a href="/by-course/">By Course Type</a></h3>
+          <ul class="guide-list">
+            <li><a href="/by-course/university-degree-visa/">University Degree Visa</a></li>
+            <li><a href="/by-course/masters-visa-spain/">Master&#x2019;s Visa</a></li>
+            <li><a href="/by-course/phd-visa-spain/">PhD Visa</a></li>
+            <li><a href="/by-course/language-school-visa/">Language School Visa</a></li>
+            <li><a href="/by-course/vocational-training-visa/">Vocational Training Visa</a></li>
+            <li class="guide-all"><a href="/by-course/">All course types &#x2192;</a></li>
+          </ul>
+        </div>
+
+        <div class="guide-group">
+          <h3><a href="/compare/">Compare Visas</a></h3>
+          <ul class="guide-list">
+            <li><a href="/compare/non-lucrative-visa/">vs Non-Lucrative Visa</a></li>
+            <li><a href="/compare/digital-nomad-visa/">vs Digital Nomad Visa</a></li>
+            <li><a href="/compare/golden-visa/">vs Golden Visa</a></li>
+            <li><a href="/compare/tourist-visa/">vs Tourist Visa</a></li>
+            <li><a href="/compare/work-visa/">vs Work Visa</a></li>
+            <li class="guide-all"><a href="/compare/">All comparisons &#x2192;</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
