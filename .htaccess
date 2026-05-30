@@ -13,6 +13,7 @@
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
   # ---- 301 redirects: retired/renamed URLs (fixes GSC 404s) ----
+  RewriteRule ^compare/golden-visa/?$ /compare/ [L,R=301]
   RewriteRule ^by-nationality/spain-student-visa-china/?$ /by-nationality/ [L,R=301]
   RewriteRule ^renewal/documents/?$ /blog/spain-student-visa-renewal-documents-checklist/ [L,R=301]
   RewriteRule ^renewal/financial/?$ /blog/spain-student-visa-renewal-financial-requirements/ [L,R=301]
