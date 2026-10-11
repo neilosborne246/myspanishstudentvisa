@@ -312,10 +312,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
         <!-- 1. Eligibility Quiz -->
         <div class="contact-option contact-option--primary">
           <div class="contact-icon red" style="font-size:1.5rem;">&#x2705;</div>
-          <h2>Take the free eligibility quiz</h2>
-          <p>Answer a few quick questions and find out instantly whether you qualify for the Spain student visa. It&#x2019;s free, takes under 2 minutes, and there&#x2019;s no commitment to proceed.</p>
-          <a href="https://dashboard.platinumlegalspain.com/student-visa" class="btn-primary" rel="noopener">Take the Quiz &#x2192;</a>
-          <div class="contact-detail">Free &#x00B7; No commitment &#x00B7; Instant result</div>
+          <h2>Start a free eligibility enquiry</h2> <p>Tell us your situation in under two minutes &#x2014; a specialist replies with what you are likely to qualify for and exactly what we would need to confirm it. It&#x2019;s free, and there&#x2019;s no commitment to proceed.</p> <a href="#enquiry" class="btn-primary">Start the Enquiry &#x2192;</a> <div class="contact-detail">Free &#x00B7; No commitment &#x00B7; A reply from a specialist, not a form letter</div>
         </div>
 
         <!-- 2. Book a free call -->
@@ -323,8 +320,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           <div class="contact-icon yellow" style="font-size:1.5rem;">&#x1F4DE;</div>
           <h2>Book a free call</h2>
           <p>Prefer to talk it through? Book a free call with one of our immigration specialists. We&#x2019;ll go over your situation, answer your questions, and let you know the next steps — no pressure.</p>
-          <a href="https://dashboard.platinumlegalspain.com/student-visa" class="btn-outline" rel="noopener">Book a Free Call &#x2192;</a>
-          <div class="contact-detail">Free &#x00B7; Book through the dashboard</div>
+          <a href="#enquiry" class="btn-outline">Request a Call &#x2192;</a> <div class="contact-detail">Free &#x00B7; Ask for a call in your enquiry and we&#x2019;ll arrange it</div>
         </div>
 
         <!-- 3. Email us -->
@@ -350,7 +346,85 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
   </section>
 
   <!-- WHAT TO EXPECT -->
-  <section class="light-section" aria-labelledby="expect-heading">
+  
+    <!-- ENQUIRY (batch 1): short preliminary enquiry — progressive, no documents -->
+    <section class="section" id="enquiry"><div class="section-inner" style="max-width:720px;">
+      <h2 class="section-heading">Start your enquiry</h2>
+      <p style="margin:.6rem 0 1.4rem;color:var(--ink-soft,#475569);">Two minutes, no documents. Tell us where you are and what you need &mdash; a specialist replies with what you are likely to qualify for and what we would need to confirm it. <strong>This is a preliminary enquiry, not an eligibility decision.</strong></p>
+      <form id="enq-form" style="display:grid;gap:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.5rem;" novalidate>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <label style="display:block;font-size:.85rem;font-weight:600;">Your name
+            <input id="enq-name" type="text" autocomplete="name" required style="width:100%;margin-top:.35rem;padding:.65rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;"></label>
+          <label style="display:block;font-size:.85rem;font-weight:600;">Email
+            <input id="enq-email" type="email" autocomplete="email" required style="width:100%;margin-top:.35rem;padding:.65rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;"></label>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <label style="display:block;font-size:.85rem;font-weight:600;">Country you&rsquo;re in now
+            <input id="enq-country" type="text" autocomplete="country-name" required style="width:100%;margin-top:.35rem;padding:.65rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;"></label>
+          <label style="display:block;font-size:.85rem;font-weight:600;">What do you need?
+            <select id="enq-type" style="width:100%;margin-top:.35rem;padding:.65rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;background:#fff;">
+              <option value="new">A new student visa</option>
+              <option value="renewal">Renewing my student authorisation</option>
+              <option value="insurance">Student visa health insurance</option>
+            </select></label>
+        </div>
+        <div id="enq-course-row" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <label style="display:block;font-size:.85rem;font-weight:600;">Course type
+            <select id="enq-course" style="width:100%;margin-top:.35rem;padding:.65rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;background:#fff;">
+              <option value="">Not sure yet</option>
+              <option>University degree / Master&rsquo;s / PhD</option>
+              <option>Language course</option>
+              <option>Vocational training</option>
+              <option>Other</option>
+            </select></label>
+          <label style="display:block;font-size:.85rem;font-weight:600;">Intended start
+            <input id="enq-start" type="month" style="width:100%;margin-top:.35rem;padding:.6rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;"></label>
+        </div>
+        <div id="enq-ins-note" style="display:none;background:#f0f7ff;border:1.5px solid #bfdbfe;border-radius:10px;padding:.9rem 1rem;font-size:.9rem;">
+          Insurance has a faster route: see your exact monthly price for a visa-compliant student policy in about a minute &mdash;
+          <a href="https://www.studentvisahealthinsurancespain.com/get-a-quote/" rel="noopener" onclick="try{gtag('event','insurance_quote_click',{source_page:'/contact/'})}catch(e){}"><strong>get your student insurance quote</strong></a>. Or send the enquiry below and we&rsquo;ll point you the right way.
+        </div>
+        <label style="display:block;font-size:.85rem;font-weight:600;">Anything else we should know? <span style="font-weight:400;color:#64748b;">(optional &mdash; mention if you&rsquo;d like a call)</span>
+          <textarea id="enq-msg" rows="3" style="width:100%;margin-top:.35rem;padding:.65rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;"></textarea></label>
+        <div style="font-size:.8rem;color:#64748b;">No documents needed at this stage &mdash; never send passports or medical details by email. We ask for anything further step by step.</div>
+        <div id="enq-err" style="display:none;color:#b91c1c;font-size:.85rem;font-weight:600;">Please add your name, a valid email and your current country.</div>
+        <button type="submit" class="btn-primary" style="justify-self:start;">Send enquiry &rarr;</button>
+        <div style="font-size:.8rem;color:#64748b;">Sends from your own email app to <strong>hola@myspanishvisa.com</strong> &mdash; or just email us there directly.</div>
+      </form>
+    </div></section>
+    <script>
+    (function(){
+      var f=document.getElementById('enq-form'); if(!f) return;
+      var type=document.getElementById('enq-type'), row=document.getElementById('enq-course-row'), note=document.getElementById('enq-ins-note');
+      function sync(){ var v=type.value;
+        row.style.display = v==='new' ? 'grid':'none';
+        note.style.display = v==='insurance' ? 'block':'none'; }
+      type.addEventListener('change',sync);
+      try{ var q=new URLSearchParams(location.search).get('type');
+        if(q && ['new','renewal','insurance'].indexOf(q)>=0){ type.value=q; } }catch(e){}
+      sync();
+      f.addEventListener('submit',function(ev){ ev.preventDefault();
+        var name=document.getElementById('enq-name').value.trim(),
+            email=document.getElementById('enq-email').value.trim(),
+            country=document.getElementById('enq-country').value.trim(),
+            err=document.getElementById('enq-err');
+        if(!name||!country||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.style.display='block'; return; }
+        err.style.display='none';
+        var v=type.value, lines=[
+          'Enquiry type: '+(v==='new'?'New student visa':v==='renewal'?'Renewal / prorroga':'Student health insurance'),
+          'Name: '+name, 'Email: '+email, 'Current country: '+country];
+        if(v==='new'){ var c=document.getElementById('enq-course').value, s=document.getElementById('enq-start').value;
+          if(c)lines.push('Course type: '+c); if(s)lines.push('Intended start: '+s); }
+        var msg=document.getElementById('enq-msg').value.trim(); if(msg)lines.push('Notes: '+msg);
+        lines.push('','Sent from myspanishstudentvisa.com/contact/ (preliminary enquiry)');
+        try{gtag('event','enquiry_submitted',{enquiry_type:v});}catch(e){}
+        location.href='mailto:hola@myspanishvisa.com?subject='+encodeURIComponent('Student visa enquiry — '+name)
+          +'&body='+encodeURIComponent(lines.join('\n'));
+      });
+    })();
+    </script>
+
+    <section class="light-section" aria-labelledby="expect-heading">
     <div class="section-inner">
       <p class="section-label" style="color:var(--red);">What Happens Next</p>
       <h2 class="section-title" id="expect-heading">From first contact to visa approved</h2>
