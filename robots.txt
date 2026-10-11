@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
 
-# Utility pages — no indexing value
-Disallow: /thank-you/
-Disallow: /404/
-Disallow: /sitemap/
+# Utility pages carry meta noindex — left crawlable so the
+# directive can actually be read (a robots block hides it).
 
 Sitemap: https://myspanishstudentvisa.com/sitemap.xml
