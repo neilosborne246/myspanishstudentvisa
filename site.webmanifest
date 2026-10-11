@@ -1,0 +1,11 @@
+{
+  "name": "My Spanish Student Visa",
+  "short_name": "Student Visa",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0c1930",
+  "theme_color": "#0c1930",
+  "icons": [
+    { "src": "/assets/logo-square-dark.png", "sizes": "500x500", "type": "image/png" }
+  ]
+}

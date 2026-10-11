@@ -18,6 +18,7 @@
   RewriteRule ^renewal/documents/?$ /blog/spain-student-visa-renewal-documents-checklist/ [L,R=301]
   RewriteRule ^renewal/financial/?$ /blog/spain-student-visa-renewal-financial-requirements/ [L,R=301]
   RewriteRule ^renewal/refused/?$ /renewal/renewal-refused/ [L,R=301]
+  RewriteRule ^life/?$ /after-arrival/ [L,R=301]
   RewriteRule ^life/bank-account/?$ /after-arrival/bank-account/ [L,R=301]
   RewriteRule ^life/health-card/?$ /after-arrival/health-card/ [L,R=301]
   RewriteRule ^blog/staying-spain-after-graduation/?$ /blog/staying-in-spain-after-graduation-options/ [L,R=301]
