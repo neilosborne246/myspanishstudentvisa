@@ -371,7 +371,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           <label style="display:block;font-size:.85rem;font-weight:600;">What do you need?
             <select id="enq-type" style="width:100%;margin-top:.35rem;padding:.65rem .8rem;border:1.5px solid #cbd5e1;border-radius:8px;font:inherit;background:#fff;">
               <option value="new">A new student visa</option>
-              <option value="renewal">Renewing my student authorisation</option>
+              <option value="renewal">Extending my student authorisation (prórroga)</option>
               <option value="insurance">Student visa health insurance</option>
             </select></label>
         </div>
@@ -418,7 +418,7 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
         if(!name||!country||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.style.display='block'; return; }
         err.style.display='none';
         var v=type.value, lines=[
-          'Enquiry type: '+(v==='new'?'New student visa':v==='renewal'?'Renewal / prorroga':'Student health insurance'),
+          'Enquiry type: '+(v==='new'?'New student visa':v==='renewal'?'Student extension (prórroga)':'Student health insurance'),
           'Name: '+name, 'Email: '+email, 'Current country: '+country];
         if(v==='new'){ var c=document.getElementById('enq-course').value, s=document.getElementById('enq-start').value;
           if(c)lines.push('Course type: '+c); if(s)lines.push('Intended start: '+s); }
@@ -483,8 +483,8 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
           <p>That&#x2019;s exactly what the free eligibility quiz is for. We review everything &#x2014; course, institution, nationality, finances &#x2014; and flag any issues before Stage 1 payment. If you don&#x2019;t qualify, we tell you upfront.</p>
         </details>
         <details>
-          <summary>Can I contact you about renewing my existing student visa?</summary>
-          <p>Yes. We help with both new applications and annual renewals (pr&#xF3;rroga de estancia por estudios). Log in to your dashboard if you&#x2019;re an existing client, or email us at hola@myspanishvisa.com to discuss a renewal.</p>
+          <summary>Can I contact you about extending my student authorisation?</summary>
+          <p>Yes. We help with both new applications and extensions of your student authorisation (pr&#xF3;rroga de estancia por estudios). Log in to your dashboard if you&#x2019;re an existing client, or email us at hola@myspanishvisa.com to discuss your extension.</p>
         </details>
       </div>
     </div>
