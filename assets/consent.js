@@ -75,13 +75,21 @@
     '.mssv-cookie-settings{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:inherit;cursor:pointer;opacity:inherit}' +
     '.mssv-cookie-settings:hover{text-decoration:underline}';
 
-  var box;
+  var box, styled;
 
-  function build() {
-    if (box) return box;
+  // Needed on every page view: the footer "Cookie settings" button uses
+  // these rules even when the banner is not shown.
+  function injectCss() {
+    if (styled) return;
+    styled = true;
     var style = document.createElement('style');
     style.textContent = CSS;
     document.head.appendChild(style);
+  }
+
+  function build() {
+    if (box) return box;
+    injectCss();
 
     box = document.createElement('div');
     box.id = 'mssv-consent';
@@ -121,6 +129,11 @@
       b.className = 'mssv-cookie-settings';
       b.setAttribute('data-cookie-settings', '');
       b.textContent = 'Cookie settings';
+      // Match the neighbouring footer link, whatever the page template.
+      var s = window.getComputedStyle(a);
+      b.style.color = s.color;
+      b.style.fontSize = s.fontSize;
+      b.style.marginLeft = s.marginLeft;
       a.parentNode.insertBefore(b, a.nextSibling);
     });
     document.addEventListener('click', function (e) {
@@ -134,6 +147,7 @@
   }
 
   function init() {
+    injectCss();
     wireSettings();
     if (!read()) show();
   }
