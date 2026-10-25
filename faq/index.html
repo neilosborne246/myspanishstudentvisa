@@ -156,8 +156,8 @@ function toggleFaq(btn){
   </div>
   <script>
     var toggle=document.querySelector('.nav-toggle'),menu=document.getElementById('mobileMenu'),closeBtn=document.getElementById('mobileMenuClose');
-    function openMenu(){menu.classList.add('open');toggle.classList.add('active');document.body.style.overflow='hidden';}
-    function closeMenu(){menu.classList.remove('open');toggle.classList.remove('active');document.body.style.overflow='';}
+    function openMenu(){menu.classList.add('open');toggle.classList.add('active');toggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+    function closeMenu(){menu.classList.remove('open');toggle.classList.remove('active');toggle.setAttribute('aria-expanded','false');document.body.style.overflow='';}
     toggle.addEventListener('click',function(){menu.classList.contains('open')?closeMenu():openMenu();});
     closeBtn.addEventListener('click',closeMenu);
     menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});

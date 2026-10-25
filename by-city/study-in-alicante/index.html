@@ -384,8 +384,8 @@ body>nav{min-height:130px;padding:1.25rem 4rem!important;}
     const toggle = document.querySelector('.nav-toggle');
     const menu = document.getElementById('mobileMenu');
     const closeBtn = document.getElementById('mobileMenuClose');
-    function openMenu(){ menu.classList.add('open'); toggle.classList.add('active'); document.body.style.overflow='hidden'; }
-    function closeMenu(){ menu.classList.remove('open'); toggle.classList.remove('active'); document.body.style.overflow=''; }
+    function openMenu(){ menu.classList.add('open'); toggle.classList.add('active');toggle.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+    function closeMenu(){ menu.classList.remove('open'); toggle.classList.remove('active');toggle.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
     toggle.addEventListener('click', () => { menu.classList.contains('open') ? closeMenu() : openMenu(); });
     closeBtn.addEventListener('click', closeMenu);
     menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
