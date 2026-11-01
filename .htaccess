@@ -23,6 +23,9 @@
   RewriteRule ^life/health-card/?$ /after-arrival/health-card/ [L,R=301]
   RewriteRule ^blog/staying-spain-after-graduation/?$ /blog/staying-in-spain-after-graduation-options/ [L,R=301]
   RewriteRule ^blog/spain-job-seeker-visa-graduates/?$ /blog/job-seeker-visa-spain-graduates/ [L,R=301]
+  # No Spanish consulate in Auckland or Johannesburg: pages moved to the responsible embassies (Nov 2026)
+  RewriteRule ^by-consulate/spanish-consulate-auckland/?$ /by-consulate/spanish-embassy-wellington/ [L,R=301]
+  RewriteRule ^by-consulate/spanish-consulate-johannesburg/?$ /by-consulate/spanish-embassy-pretoria/ [L,R=301]
 </IfModule>
 
 # ---- Gzip / Deflate compression ----
